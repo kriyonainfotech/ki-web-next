@@ -1,0 +1,45 @@
+/* Apply gradient scrollbar */
+::-webkit-scrollbar {
+    width: 14px;
+    /* Width for better usability */
+}
+
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    /* Neutral gray for contrast */
+    border-radius: 7px;
+    /* Rounded track corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom,
+            #2a76f2,
+            #5b2cef,
+            #5c2bee,
+            #6b36e8,
+            #8721b7,
+            #901faa);
+    border-radius: 7px;
+    /* Rounded thumb corners */
+    border: 2px solid #e0e0e0;
+    /* Border for better visibility */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom,
+            #901faa,
+            #8721b7,
+            #6b36e8,
+            #5c2bee,
+            #5b2cef,
+            #2a76f2);
+    /* Reverse gradient on hover */
+    border: 2px solid #d6d6d6;
+    /* Slightly darker border on hover */
+}
+
+img {
+    pointer-events: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+}

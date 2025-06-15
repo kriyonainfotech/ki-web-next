@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /landing-page/
+Allow: /
+
+Sitemap: https://kriyonainfotech.com/sitemap.xml

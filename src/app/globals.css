@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-roboto);
+}
+
+.mont {
+  font-family: var(--font-montserrat);
+}
+
+.roboto {
+  font-family: var(--font-roboto);
+}
+
+.bg-hero-grid {
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url('/backgrounds/bg-hero-grid.svg');
+}

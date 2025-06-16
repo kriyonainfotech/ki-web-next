@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link'; // ✅ Correct way to use links in Next.js
 import CTASection from '@/components/CTASection'; // ✅ Adjusted path for Next.js
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default function Blog() {
     const [blogs, setBlogs] = useState([]);
@@ -12,7 +13,7 @@ export default function Blog() {
         const fetchBlogs = async () => {
             try {
                 const response = await axios.get(
-                    "https://ks-backend.vercel.app/api/blogs/allblogs"
+                    `${apiUrl}/api/blogs/allblogs`
                 );
                 const allBlogs = response.data;
                 console.log(allBlogs, "allBlogs");
@@ -82,9 +83,9 @@ export default function Blog() {
                                         {new Date(blog.createdAt).toLocaleDateString()}
                                     </p>
                                     <Link
-                                        to={`/blog/${slugify(blog.title)}`}
-                                        state={{ blog }}
-                                        rel="noopener noreferrer"
+                                        href={`/blog/${blog.slug}`}
+                                        // state={{ blog }}
+                                        // rel="noopener noreferrer"
                                         className="inline-block mt-2 text-blue-600 hover:underline font-medium"
                                     >
                                         Read More →

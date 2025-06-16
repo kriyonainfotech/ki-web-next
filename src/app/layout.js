@@ -22,7 +22,7 @@ const montserrat = Font_Montserrat({
 });
 
 export const metadata = {
-  title: "Kriyona Infotech",
+  title: "Kriyona Infotech | IT company in Surat, offering web development, app development, software development, and branding services.",
   description: "Kriyona Infotech is a leading IT company in Surat, offering web development, app development, software development, and branding services.",
   other: {
     "p:domain_verify": "b610f1c560b3cf0b893ca727269832d1", // <-- Add this line
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="   ">
       <head>
-
+        <link rel="icon" type="image/svg+xml" href="./kriyona-infotech-logo1.png" />
       </head>
       <body
         className={`${roboto.variable} ${montserrat.variable}`}

@@ -26,9 +26,10 @@ export const metadata = {
   description: "Kriyona Infotech is a leading IT company in Surat, offering web development, app development, software development, and branding services.",
   other: {
     "p:domain_verify": "b610f1c560b3cf0b893ca727269832d1", // <-- Add this line
+    "google-site-verification": "Oih10jG428lmQLpdXurp-xL8_I9o-DXmzgVd1uanwqg"
   },
 };
-
+{/* <meta name="google-site-verification" content="Oih10jG428lmQLpdXurp-xL8_I9o-DXmzgVd1uanwqg" /> */ }
 export default function RootLayout({ children }) {
   return (
     <html lang="   ">

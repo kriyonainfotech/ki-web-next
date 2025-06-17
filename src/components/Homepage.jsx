@@ -21,11 +21,11 @@ export default function Home() {
             </Head>
 
             <main className="h-auto">
-                <div className="xxs:px-5 sm:px-10 lg:px-24 2xl:px-40">
+                <div className="px-5 sm:px-10 lg:px-24 2xl:px-40">
                     <div className="bg-hero-grid h-auto mt-5">
-                        <div className="xxs:text-center flex flex-col justify-center">
-                            <div className=" border border-[#55555580] xxs:py-16 sm:py-20 md:py-32 text-center px-20">
-                                <h1 className="xxs:text-4xl sm:text-5xl xl:text-5xl font-semibold lg:leading-tight xl:leading-tight text-[#222222]">
+                        <div className="text-center flex flex-col justify-center">
+                            <div className=" border border-[#55555580] py-16 sm:py-20 md:py-32 text-center px-2 lg:px-20">
+                                <h1 className="text-4xl sm:text-5xl xl:text-5xl font-semibold lg:leading-tight xl:leading-tight text-[#222222]">
                                     Bringing Visions to Digital Life
                                 </h1>
                                 <p className="text-xl mt-7 text-[#222222]">
@@ -39,7 +39,7 @@ export default function Home() {
                                         fill="currentColor"
                                         strokeWidth={0}
                                         viewBox="0 0 16 16"
-                                        className="ms-auto xxs:text-base md:text-2xl text-[#A5A4A3]"
+                                        className="ms-auto text-base md:text-2xl text-[#A5A4A3]"
                                         height="1em"
                                         width="1em"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function Home() {
                                             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"
                                         />
                                     </svg>
-                                    <p className="xxs:text-sm sm:text-base xs:text-lg underline underline-offset-4 text-center ">
+                                    <p className="text-sm sm:text-base xs:text-lg underline underline-offset-4 text-center ">
                                         Expertise
                                     </p>
                                 </div>
@@ -59,7 +59,7 @@ export default function Home() {
                                         fill="currentColor"
                                         strokeWidth={0}
                                         viewBox="0 0 16 16"
-                                        className="ms-auto xxs:text-base md:text-2xl text-[#A5A4A3]"
+                                        className="ms-auto text-base md:text-2xl text-[#A5A4A3]"
                                         height="1em"
                                         width="1em"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export default function Home() {
                                             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"
                                         />
                                     </svg>
-                                    <p className="xxs:text-sm sm:text-base xs:text-lg underline underline-offset-4 text-center ">
+                                    <p className="text-sm sm:text-base xs:text-lg underline underline-offset-4 text-center ">
                                         Innovation
                                     </p>
                                 </div>
@@ -79,7 +79,7 @@ export default function Home() {
                                         fill="currentColor"
                                         strokeWidth={0}
                                         viewBox="0 0 16 16"
-                                        className="ms-auto xxs:text-base md:text-2xl text-[#A5A4A3]"
+                                        className="ms-auto text-base md:text-2xl text-[#A5A4A3]"
                                         height="1em"
                                         width="1em"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -89,26 +89,26 @@ export default function Home() {
                                             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"
                                         />
                                     </svg>
-                                    <p className="xxs:text-sm sm:text-base xs:text-lg underline underline-offset-4 text-center ">
+                                    <p className="text-sm sm:text-base xs:text-lg underline underline-offset-4 text-center ">
                                         Solutions
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="xxs:py-10 sm:py-20 md:py-24">
-                        <div className="xxs:mt-0 mt-12 mx-auto border border-black-border pt-16">
+                    <div className="py-10 sm:py-20 md:py-24">
+                        <div className="mt-0 mt-12 mx-auto border border-black-border pt-16">
                             <p className="text-md font-semibold text-center text-capilatize text-gray-600 opacity-80 mb-1">
                                 who we are
                             </p>
                             <h2 className="text-3xl font-bold tracking-wide text-center">
                                 KRIYONA INFOTECH
                             </h2>
-                            <p className="text-[#666666] text-center my-8 xxs:w-full sm:w-3/4 lg:w-2/3 xl:w-3/6 mx-auto">
+                            <p className="text-[#666666] text-center my-8 w-full sm:w-3/4 lg:w-2/3 xl:w-3/6 mx-auto">
                                 "Kriyona Infotech is a leading IT company in Surat, India offering custom website development, mobile app solutions, UI/UX design, SEO, and digital marketing.We empower startups and enterprises with scalable, high-performance digital solutions that drive real business results."
                             </p>
                             <div className="grid grid-cols-3 border-t border-black-border">
-                                <div className="xxs:text-center  border-r border-black-border p-5">
+                                <div className="text-center  border-r border-black-border p-5">
                                     <h2 className="text-center font-semibold text-xl text-primary-black">
                                         100%
                                     </h2>
@@ -116,7 +116,7 @@ export default function Home() {
                                         CLIENT SATISFACTION
                                     </p>
                                 </div>
-                                <div className="xxs:text-center border-r border-black-border p-5">
+                                <div className="text-center border-r border-black-border p-5">
                                     <h2 className="text-center font-semibold text-xl text-primary-black">
                                         98%
                                     </h2>
@@ -124,7 +124,7 @@ export default function Home() {
                                         SUCCESS RATING
                                     </p>
                                 </div>
-                                <div className="xxs:text-center p-5">
+                                <div className="text-center p-5">
                                     <h2 className="text-center font-semibold text-xl text-primary-black">
                                         15+
                                     </h2>
@@ -137,11 +137,11 @@ export default function Home() {
                     </div>
 
                     {/* <div className="bg-pink">
-            <div className="xxs:py-10 sm:py-5">
+            <div className="py-10 sm:py-5">
               <div className="text-center border border-black-border">
-                <h1 className="xxs:text-4xl sm:text-5xl xl:text-6xl font-bold text-primary-black py-16">Our partners include</h1>
+                <h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold text-primary-black py-16">Our partners include</h1>
                 <div className="grid grid-cols-1">
-                  <div className="xl:hidden grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                  <div className="xl:hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                     <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/vercel.svg" /></div>
                     <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/tinybird.svg" /></div>
                     <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/clerk.svg" /></div>
@@ -152,7 +152,7 @@ export default function Home() {
                     <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/mux.svg" /></div>
                   </div>
                   <div className="hidden xl:inline-grid">
-                    <div className="grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                       <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/vercel.svg" /></div>
                       <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/tinybird.svg" /></div>
                       <div className="border border-black-border py-5"><img alt="img" loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="mx-auto" style={{ color: 'transparent' }} src="/clerk.svg" /></div>
@@ -172,13 +172,13 @@ export default function Home() {
 
                     {/* digital partners section */}
                     {/* <div className="bg-pink">
-            <div className="xxs:py-10 sm:py-5">
+            <div className="py-10 sm:py-5">
               <div className="text-center border border-black-border">
-                <h1 className="xxs:text-4xl sm:text-5xl xl:text-5xl font-bold text-primary-black py-16">
+                <h1 className="text-4xl sm:text-5xl xl:text-5xl font-bold text-primary-black py-16">
                   Our Digital partners include
                 </h1>
                 <div className="grid grid-cols-1">
-                  <div className="grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0">
                     <div className="border border-black-border py-5">
                       <a target="_blank">
                         <img
@@ -253,14 +253,14 @@ export default function Home() {
                     {/* portfolio  */}
 
                     <div className="bg-pink">
-                        <div className="xxs:py-10 sm:py-5">
+                        <div className="py-10 sm:py-5">
                             <div className="text-center border-r-1 border-black-border">
-                                <h1 className="xxs:text-4xl sm:text-5xl xl:text-5xl font-bold text-primary-black py-16 border border-b-0 border-r-0 border-black-border">
+                                <h1 className="text-4xl sm:text-5xl xl:text-5xl font-bold text-primary-black py-16 border border-b-0 border-r-0 border-black-border">
                                     Our Valued Clients
                                 </h1>
 
                                 <div className="grid grid-cols-1">
-                                    <div className="grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0">
                                         {[
                                             {
                                                 src: "/worldclasse.avif",
@@ -330,7 +330,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1">
-                                    <div className="grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0">
                                         <div className="border border-black-border py-5 border-r-0">
                                             <a target="_blank">
                                                 <img
@@ -404,7 +404,7 @@ export default function Home() {
 
                     <div className="bg-blue">
                         <div className="mt-20 text-center border border-black-border">
-                            <h1 className="xxs:mx-5 sm:mx-5 lg:mx-24 2xl:mx-40 xxs:text-4xl sm:text-5xl xl:text-5xl font-bold text-primary-black mx-auto xxs:w-auto leading-snug pt-20">
+                            <h1 className="mx-5 sm:mx-5 lg:mx-24 2xl:mx-40 text-4xl sm:text-5xl xl:text-5xl font-bold text-primary-black mx-auto w-auto leading-snug pt-20">
                                 We Deliver Exceptional <br />
                                 Digital Solutions
                             </h1>
@@ -412,7 +412,7 @@ export default function Home() {
                                 Your trusted partner for achieving product design excellence
                                 efficiently and reliably.
                             </p>
-                            <div className="grid xxs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mx-auto">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mx-auto">
                                 <div className="border border-r-0 border-b-0 border-l-0 border-black-border pb-7">
                                     <img
                                         alt="Game Development"
@@ -502,11 +502,11 @@ export default function Home() {
                     </div>
 
                     {/* <div className="bg-pink">
-            <div className="text-center xxs:mt-24 sm:mt-36 border border-black-border">
-              <div className="xxs:text-4xl sm:text-5xl xl:text-6xl font-bold text-primary-black py-20">
+            <div className="text-center mt-24 sm:mt-36 border border-black-border">
+              <div className="text-4xl sm:text-5xl xl:text-6xl font-bold text-primary-black py-20">
                 <h1>Technologies We Utilise</h1>
               </div>
-              <div className="grid xxs:grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7">
+              <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7">
                 <p className="p-3 text-center cursor-pointer border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">Frontend</p>
                 <p className="p-3 text-center cursor-pointer border border-black-border false">Backend</p>
                 <p className="p-3 text-center cursor-pointer border border-black-border false">AI/ML</p>
@@ -515,25 +515,25 @@ export default function Home() {
                 <p className="p-3 text-center cursor-pointer border border-black-border false">Mobiles</p>
                 <p className="p-3 text-center cursor-pointer border border-black-border false">Games</p>
               </div>
-              <div className="grid xxs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://nextjs.org/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/nextjs.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://www.typescriptlang.org/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/typescript.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/javascript.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://react.dev"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/react.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://www.w3schools.com/html/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/html.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://www.w3schools.com/css/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/css.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://getbootstrap.com/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/bootstrap.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://angular.io/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/angular.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://sass-lang.com/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/sass.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://vuejs.org/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/vue-js.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://tailwindcss.com/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/tailwind-css.svg" /></a></div>
-                <div className="border border-black-border xxs:p-5 sm:p-7"><a href="https://react-bootstrap.netlify.app/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="xxs:w-10 xxs:h-10 mx-auto" style={{ color: 'transparent' }} src="/react-bootstrap.svg" /></a></div>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://nextjs.org/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/nextjs.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://www.typescriptlang.org/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/typescript.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/javascript.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://react.dev"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/react.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://www.w3schools.com/html/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/html.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://www.w3schools.com/css/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/css.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://getbootstrap.com/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/bootstrap.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://angular.io/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/angular.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://sass-lang.com/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/sass.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://vuejs.org/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/vue-js.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://tailwindcss.com/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/tailwind-css.svg" /></a></div>
+                <div className="border border-black-border p-5 sm:p-7"><a href="https://react-bootstrap.netlify.app/"><img alt="img" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="w-10 h-10 mx-auto" style={{ color: 'transparent' }} src="/react-bootstrap.svg" /></a></div>
               </div>
             </div>
           </div> */}
                     <Technologies />
-                    <div className="xxs:mt-24 sm:mt-36 text-center border border-black-border py-20">
-                        <h1 className="xxs:text-4xl sm:text-5xl font-semibold leading-tight text-[#222222]">
+                    <div className="mt-24 sm:mt-36 text-center border border-black-border py-20">
+                        <h1 className="text-4xl sm:text-5xl font-semibold leading-tight text-[#222222]">
                             Success Stories
                         </h1>
                     </div>
@@ -584,7 +584,7 @@ export default function Home() {
                         <div className="col-span-12 lg:col-span-7 p-7 border border-black-border flex flex-col justify-center">
                             <div className="flex flex-col justify-between">
                                 <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
-                                <p className="xxs:text-sm md:text-lg lg:text-2xl leading-[35px] w-5/6 mx-auto">
+                                <p className="text-sm md:text-lg lg:text-2xl leading-[35px] w-5/6 mx-auto">
                                     I'm really impressed with the rental app developed by Kriyona
                                     Infotech. The process of renting and returning products is
                                     very smooth, and the stock management and billing system work

@@ -53,11 +53,11 @@ export default function Blog() {
                 <meta property="og:image" content="https://www.kriyonainfotech.com/kriyona-infotech-logo1.png" />
             </Head>
 
-            <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40">
+            <div className="px-5 sm:px-5 lg:px-24 2xl:px-40">
                 {/* Hero Section */}
                 <section className="text-center pt-0">
                     <div className="bg-hero-grid py-20 border border-[#55555580]">
-                        <h1 className="xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold text-[#222]">
+                        <h1 className="text-4xl sm:text-5xl xl:text-6xl font-semibold text-[#222]">
                             Our Blogs
                         </h1>
                         <p className="text-lg text-gray-600 mt-4">

@@ -33,7 +33,7 @@ export const metadata = {
 {/* <meta name="google-site-verification" content="Oih10jG428lmQLpdXurp-xL8_I9o-DXmzgVd1uanwqg" /> */ }
 export default function RootLayout({ children }) {
   return (
-    <html lang="   ">
+    <html lang="">
       <head>
         <link rel="icon" type="image/svg+xml" href="./kriyona-infotech-logo1.png" />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="1ootqa2tzJhVJi95attBbw" async></script>

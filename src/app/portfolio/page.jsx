@@ -31,14 +31,14 @@ export default function Portfolio() {
             </Head>
 
 
-            <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40 mb-24">
+            <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 mb-24">
                 <div className="bg-hero-grid mt-5">
-                    <div className="border border-[#55555580] xxs:p-2 sm:p-10 md:px-20 xxs:pt-10 sm:pt-20">
+                    <div className="border border-[#55555580] p-2 sm:p-10 md:px-20 pt-10 sm:pt-20">
                         <div className="mb-10 text-center sm:px-10 md:px-20 lg:px-0 xl:px-10">
-                            <h1 className="xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold leading-tight text-[#222222]">
+                            <h1 className="text-4xl sm:text-5xl xl:text-6xl font-semibold leading-tight text-[#222222]">
                                 Portfolio
                             </h1>
-                            <p className="text-xl mt-7 text-[#222222] xxs:w-auto xl:w-3/5 mx-auto">
+                            <p className="text-xl mt-7 text-[#222222] w-auto xl:w-3/5 mx-auto">
                                 We Team Up With Visionary Companies To Shape And Bring To Life
                                 Their Innovative Business Ideas.
                             </p>
@@ -113,8 +113,8 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="bg-grid pb-16 h-auto">
-                    <div className=" grid xxs:grid-cols-1 sm:grid-cols-2 w-full mx-auto">
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                    <div className=" grid grid-cols-1 sm:grid-cols-2 w-full mx-auto">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a>
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -132,7 +132,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a>
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -150,7 +150,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a target="_blank">
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -172,7 +172,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a>
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -194,7 +194,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a>
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -212,7 +212,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a target="_blank">
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -234,7 +234,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a target="_blank">
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">
@@ -253,7 +253,7 @@ export default function Portfolio() {
                             </a>
                         </div>
 
-                        <div className="border border-[#55555580] xxs:p-6 xl:p-14">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
                             <a target="_blank">
                                 <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
                                     <div className="overflow-hidden">

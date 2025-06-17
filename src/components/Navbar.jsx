@@ -42,7 +42,7 @@ export default function Navbar() {
                 className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'backdrop-blur-md shadow-md' : 'bg-transparent'
                     }`}
             >
-                <div className="xxs:px-5 lg:px-24 2xl:px-40 py-5">
+                <div className="px-10 lg:px-24 2xl:px-40 py-5">
                     <div className="flex items-center">
                         <div className="py-4 px-5 border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
                             <Link href="/">
@@ -55,7 +55,7 @@ export default function Navbar() {
                         </div>
 
                         {/* Desktop Navigation */}
-                        <div className="xxs:hidden md:inline-flex w-full">
+                        <div className="hidden lg:inline-flex w-full">
                             <nav className="w-full">
                                 <ul className="grid grid-cols-7 w-full">
                                     <li
@@ -111,7 +111,7 @@ export default function Navbar() {
                         </div>
 
                         {/* Mobile Menu Button */}
-                        <div className="md:hidden ms-auto">
+                        <div className="lg:hidden ms-auto">
                             <button
                                 className="border border-black-border rounded p-2 w-fit"
                                 onClick={toggleMenu}

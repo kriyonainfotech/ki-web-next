@@ -74,7 +74,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
     };
 
     return (
-        <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40 py-10">
+        <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 py-10">
             <div className="flex flex-col md:flex-row gap-10">
                 {/* Left: Blog Content */}
                 <div className="md:w-[70%] border border-[#55555580] p-8">

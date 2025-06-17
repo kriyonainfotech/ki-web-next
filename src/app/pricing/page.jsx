@@ -195,14 +195,14 @@ export default function Pricing() {
                 <link rel="canonical" href="https://kriyonainfotech.com/pricing" />
             </Head>
 
-            <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40 my-20">
+            <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 my-20">
                 {/* Hero Section */}
                 <div className="bg-hero-grid mt-5">
                     <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-20 md:py-28">
-                        <h1 className="xxs:text-2xl sm:text-4xl font-bold text-gray-900">
+                        <h1 className="text-2xl sm:text-4xl font-bold text-gray-900">
                             Straightforward Pricing for Digital Excellence
                         </h1>
-                        <p className="text-xl mt-5 text-primary-black xxs:w-auto xl:w-4/6 mx-auto">
+                        <p className="text-xl mt-5 text-primary-black w-auto xl:w-4/6 mx-auto">
                             Quality solutions with transparent pricing. No hidden fees, just exceptional value.
                         </p>
                     </div>

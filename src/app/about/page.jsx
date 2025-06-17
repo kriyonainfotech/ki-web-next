@@ -76,16 +76,16 @@ export default function About() {
                     })}
                 </script>
             </Head>
-            <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40">
+            <div className="px-5 sm:px-5 lg:px-24 2xl:px-40">
                 <div className="bg-hero-grid mt-5 ">
                     <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-40">
                         <h1
-                            className="xxs:text-xl xs:text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
+                            className="text-xl xs:text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
                             style={{ lineHeight: "50px" }}
                         >
                             Kriyona Infotech – Empowering Businesses with Custom Software, Web, Mobile & AI Solutions from India
                         </h1>
-                        <p className="text-xl mt-7 text-[#222222] xxs:w-auto xl:w-5/6 mx-auto">
+                        <p className="text-xl mt-7 text-[#222222] w-auto xl:w-5/6 mx-auto">
                             We’re a forward-thinking IT company in India delivering cutting-edge digital solutions to help brands grow, innovate, and lead in the digital age.
                         </p>
 
@@ -124,7 +124,7 @@ export default function About() {
                     {accordionData.map((item, index) => (
                         <div className="accordion px-5" key={index}>
                             <div
-                                className="accordion-title border-b border-gray-600 py-4 xxs:px-5 sm:px-10 flex justify-between text-start items-center my-4 cursor-pointer "
+                                className="accordion-title border-b border-gray-600 py-4 px-5 sm:px-10 flex justify-between text-start items-center my-4 cursor-pointer "
                                 onClick={() => toggleAccordion(index)}
                             >
                                 <h4 className="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] from-43% to-[#FD98FF] to-100% lg:text-xl md:text-lg xs:text-base">

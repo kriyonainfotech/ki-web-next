@@ -21,11 +21,11 @@ export default function Services() {
                 <link rel="canonical" href="https://kriyonainfotech.com/services" />
             </Head>
 
-            <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40 ">
+            <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 ">
                 {/* Hero Section */}
                 <section className="hero-section text-center pb-20 animate-fade-in">
                     <div className="container mx-auto py-24 px-8 bg-gradient-to-b  from-purple-600/10 to-pink-500/10 backdrop-blur-sm border border-[#55555580]">
-                        <h1 className="xxs:text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-6">
                             Transformative Tech Solutions
                         </h1>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">

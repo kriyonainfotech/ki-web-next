@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
+import { FaRegCopyright } from "react-icons/fa";
 
 export default function Footer() {
     const [email, setEmail] = useState("");
@@ -274,35 +275,19 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="mt-14">
-                    <div className="flex flex-col md:flex-row justify-center items-center border-t border-gray-200 pt-7">
-                        <p className="text-center text-[#999999] flex items-center">
-                            Copyright
-                            <span className="text-3xl px-1">©</span>
-                            2025, KriyonaInfotech. All Rights Reserved.
+                    <div className="flex flex-col md:flex-row justify-center items-center border-t border-gray-200 pt-6 px-4 gap-y-3 md:gap-x-4 text-center">
+                        <p className="text-[#999999] text-sm flex items-center justify-center">
+                            Copyright © 2025, KriyonaInfotech. All Rights Reserved.
                         </p>
-                        {/* <div className="flex space-x-4 mt-4 md:mt-0">
-                  <Link
-                    href="/privacy-policy"
-                    className="text-[#999999] hover:text-primary-black"
-                  >
-                    Privacy Policy
-                  </Link>
-                  <Link
-                    href="/terms-of-service"
-                    className="text-[#999999] hover:text-primary-black"
-                  >
-                    Terms of Service
-                  </Link>
-                  <Link
-                    href="/sitemap"
-                    className="text-[#999999] hover:text-primary-black"
-                  >
-                    Sitemap
-                  </Link>
-                </div> */}
+
+                        {/* Uncomment if needed */}
+                        {/* <Link href="/sitemap" className="text-[#999999] hover:text-primary-black text-sm">
+                            Sitemap
+                        </Link> */}
                     </div>
+
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 }

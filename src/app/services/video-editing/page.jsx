@@ -139,7 +139,7 @@ export default function VideoEditingService() {
             </Head>
 
 
-            <div className="container mx-auto">
+            <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
                 <Breadcrumb paths={breadcrumbPaths} />
 
                 {/* Hero Section */}

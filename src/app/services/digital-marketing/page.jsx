@@ -157,7 +157,7 @@ export default function DigitalMarketing() {
                 </section>
 
                 {/* Services Grid */}
-                <section className="py-20 bg-gray-50">
+                <section className="py-20">
                     <div className="container mx-auto px-4 md:px-6">
                         <motion.div
                             className="text-center mb-16"

@@ -1,19 +1,35 @@
 import Image from "next/image";
 import Technologies from '@/components/Technologies'
+import Head from "next/head";
+
 export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>Kriyona Infotech | Web, App & Software Development Company in Surat</title>
+                <meta name="description" content="Kriyona Infotech is a Surat-based IT company offering website development, mobile apps, custom software, and digital marketing services to grow your business online." />
+                <meta name="keywords" content="IT company in Surat, website development Surat, app development, custom software, digital marketing, SEO services, kriyona infotech" />
+                <meta name="author" content="Kriyona Infotech" />
+                <meta property="og:title" content="Kriyona Infotech | Web, App & Software Development Company in Surat" />
+                <meta property="og:description" content="From websites to mobile apps, Kriyona Infotech builds digital solutions that drive results. Get your business online with expert IT services." />
+                <meta property="og:url" content="https://kriyonainfotech.com/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://www.kriyonainfotech.com/kriyona-infotech-logo1.png" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://kriyonainfotech.com/" />
+            </Head>
+
             <main className="h-auto">
                 <div className="xxs:px-5 sm:px-10 lg:px-24 2xl:px-40">
                     <div className="bg-hero-grid h-auto mt-5">
                         <div className="xxs:text-center flex flex-col justify-center">
-                            <div className="border border-[#55555580] xxs:py-16 sm:py-20 md:py-32 text-center">
-                                <h1 className="xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold lg:leading-tight xl:leading-tight text-[#222222]">
-                                    Bringing Visions to <br /> Digital Life.
+                            <div className=" border border-[#55555580] xxs:py-16 sm:py-20 md:py-32 text-center px-20">
+                                <h1 className="xxs:text-4xl sm:text-5xl xl:text-5xl font-semibold lg:leading-tight xl:leading-tight text-[#222222]">
+                                    Bringing Visions to Digital Life
                                 </h1>
                                 <p className="text-xl mt-7 text-[#222222]">
-                                    Driving Growth Through Tailored Digital Solutions.
+                                    Your Go-To IT Company in India — From custom websites to mobile apps and digital marketing, Kriyona Infotech delivers innovative solutions that drive real business growth.
                                 </p>
                             </div>
                             <div className="grid grid-cols-3 h-24 border border-[#55555580]">
@@ -85,14 +101,11 @@ export default function Home() {
                             <p className="text-md font-semibold text-center text-capilatize text-gray-600 opacity-80 mb-1">
                                 who we are
                             </p>
-                            <h4 className="text-3xl font-bold tracking-wide text-center">
+                            <h2 className="text-3xl font-bold tracking-wide text-center">
                                 KRIYONA INFOTECH
-                            </h4>
+                            </h2>
                             <p className="text-[#666666] text-center my-8 xxs:w-full sm:w-3/4 lg:w-2/3 xl:w-3/6 mx-auto">
-                                "Kriyona Infotech creates impactful designs and robust solutions
-                                for web and mobile apps. We blend our expertise in technology
-                                and design to deliver innovative digital solutions that drive
-                                your business forward."
+                                "Kriyona Infotech is a leading IT company in Surat, India offering custom website development, mobile app solutions, UI/UX design, SEO, and digital marketing.We empower startups and enterprises with scalable, high-performance digital solutions that drive real business results."
                             </p>
                             <div className="grid grid-cols-3 border-t border-black-border">
                                 <div className="xxs:text-center  border-r border-black-border p-5">

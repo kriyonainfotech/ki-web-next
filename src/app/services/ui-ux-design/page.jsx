@@ -13,6 +13,7 @@ import { RiUserVoiceLine } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
 import ReachOutCTA from "@/components/ReachOutCTA";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function UIUXdesign() {
     const fadeIn = {
@@ -101,13 +102,43 @@ export default function UIUXdesign() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Professional UI/UX Design Services | Kriyona Infotech</title>
+
+            <Head>
+                <title>UI/UX Design Services in Surat | User Experience & Interface Design</title>
                 <meta
                     name="description"
-                    content="Transform your digital presence with our award-winning UI/UX design services. User-centered interfaces that drive engagement and conversions."
+                    content="Get modern and user-friendly UI/UX design services in Surat. Kriyona Infotech crafts intuitive designs that enhance user experience and product engagement."
                 />
-            </Helmet> */}
+                <meta
+                    name="keywords"
+                    content="UI/UX design Surat, user experience designer, interface design company, mobile app UI design, web UI/UX services"
+                />
+                <meta name="author" content="Kriyona Infotech" />
+
+                <meta
+                    property="og:title"
+                    content="UI/UX Design Agency in Surat | Kriyona Infotech"
+                />
+                <meta
+                    property="og:description"
+                    content="Boost user engagement with Kriyona Infotech’s expert UI/UX design services. We design beautiful, intuitive digital interfaces for web & mobile."
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.kriyonainfotech.com/services/ui-ux-design"
+                />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/uiux/uiux-hero.jpg"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <link
+                    rel="canonical"
+                    href="https://www.kriyonainfotech.com/services/ui-ux-design"
+                />
+            </Head>
 
             <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
                 <Breadcrumb paths={breadcrumbPaths} />

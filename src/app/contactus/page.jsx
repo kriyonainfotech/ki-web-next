@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Head from "next/head";
 
 export default function ContactUs() {
     const form = useRef();
@@ -43,81 +44,32 @@ export default function ContactUs() {
 
     return (
         <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40">
-            {/* SEO Meta */}
-            {/* <Helmet>
-                <title>Contact Us | Kriyona Infotech</title>
+
+            <Head>
+                <title>Contact Us | Kriyona Infotech - Web, App & Marketing Services in Surat</title>
                 <meta
                     name="description"
-                    content="Get in touch with Kriyona Infotech. We're available via email, phone, or our contact form for your business needs."
+                    content="Get in touch with Kriyona Infotech for web development, app development, software solutions, and digital marketing. Let’s turn your idea into a digital product."
                 />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://www.kriyona.com/contact" />
-                <script type="application/ld+json">{`
-            {
-              "@context": "https://schema.org",
-              "@type": "ContactPage",
-              "mainEntity": {
-                "@type": "Organization",
-                "name": "Kriyona Infotech",
-                "url": "https://www.kriyona.com",
-                "email": "kriyonainfotech@gmail.com",
-                "telephone": "+918401366742",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "3rd floor, 51-52 Pramukh park society, Mahadev chowk",
-                  "addressLocality": "Mota Varachha",
-                  "addressRegion": "Gujarat",
-                  "postalCode": "394101",
-                  "addressCountry": "IN"
-                }
-              }
-            }
-          `}</script>
-                <script type="application/ld+json">{`
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Kriyona Infotech",
-      "image": "https://www.kriyona.com/logo.png",
-      "@id": "https://www.kriyona.com",
-      "url": "https://www.kriyona.com",
-      "telephone": "+918401366742",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3rd floor, 51-52 Pramukh park society, Mahadev chowk",
-        "addressLocality": "Mota Varachha",
-        "addressRegion": "Gujarat",
-        "postalCode": "394101",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "21.1702",
-        "longitude": "72.8311"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "19:00"
-      },
-      "sameAs": [
-        "https://www.youtube.com/@KriyonaInfotech",
-        "https://www.linkedin.com/company/kriyonainfotech",
-        "https://www.facebook.com/profile.php?id=61567821947508",
-        "https://www.instagram.com/kriyonainfotech/"
-      ]
-    }
-  `}</script>
-            </Helmet> */}
+                <meta
+                    name="keywords"
+                    content="Contact Kriyona Infotech, Web development contact, App development agency Surat, digital marketing help, IT services contact"
+                />
+                <meta property="og:title" content="Contact Us | Kriyona Infotech" />
+                <meta
+                    property="og:description"
+                    content="Need a website, mobile app, or branding help? Reach out to Kriyona Infotech, Surat's trusted IT partner."
+                />
+                <meta property="og:url" content="https://kriyonainfotech.com/contactus" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/kriyona-infotech-logo1.png"
+                />
+                <link rel="canonical" href="https://kriyonainfotech.com/contactus" />
+            </Head>
+
+
             <div className="bg-hero-grid py-20 px-4 border border-[#55555580]">
                 <h1 className="text-center text-4xl font-semibold text-[#222222]">
                     Contact Us

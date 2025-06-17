@@ -17,10 +17,11 @@ export default function Navbar() {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     const servicePages = [
-        { label: 'UI/UX Design', path: '/services/ui-ux-design' },
         { label: 'Web Development', path: '/services/web-development' },
         { label: 'Mobile Apps', path: '/services/app-development' },
-        { label: 'SEO', path: '/services/seo' },
+        { label: 'UI/UX Design', path: '/services/ui-ux-design' },
+        { label: 'Search Engine Optimisation (SEO)', path: '/services/seo' },
+        { label: 'Video Editing', path: '/services/video-editing' },
         { label: 'Digital Marketing', path: '/services/digital-marketing' },
     ];
 

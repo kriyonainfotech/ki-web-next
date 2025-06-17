@@ -10,6 +10,7 @@ import { RiLineChartLine } from "react-icons/ri";
 import { MdSpeed } from "react-icons/md";
 import { FaMobileAlt } from "react-icons/fa";
 import { TbSeo } from "react-icons/tb";
+import Head from "next/head";
 
 export default function SEOServices() {
     const fadeIn = {
@@ -56,13 +57,30 @@ export default function SEOServices() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Professional SEO Services in Surat | Kriyona Infotech</title>
+            <Head>
+                <title>SEO Services in Surat | Boost Organic Traffic with Kriyona Infotech</title>
                 <meta
                     name="description"
-                    content="Data-driven SEO strategies that boost rankings & revenue. Surat's leading SEO agency with proven track record in technical optimization and organic growth."
+                    content="Dominate search rankings with expert SEO services from Kriyona Infotech in Surat. We provide on-page SEO, off-page optimization, technical SEO, and performance tracking to help your business grow."
                 />
-            </Helmet> */}
+                <meta
+                    name="keywords"
+                    content="SEO services Surat, search engine optimization, on-page SEO, off-page SEO, technical SEO, local SEO, Kriyona Infotech"
+                />
+                <meta property="og:title" content="SEO Services in Surat | Kriyona Infotech" />
+                <meta
+                    property="og:description"
+                    content="Grow your website traffic with proven SEO strategies from Kriyona Infotech. Get better rankings, more leads, and real results."
+                />
+                <meta property="og:url" content="https://kriyonainfotech.com/services/seo" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/kriyona-infotech-logo1.png"
+                />
+                <link rel="canonical" href="https://kriyonainfotech.com/services/seo" />
+            </Head>
+
 
             <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
                 <Breadcrumb paths={breadcrumbPaths} />

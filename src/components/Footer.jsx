@@ -1,6 +1,32 @@
+'use client';
+
+import React from 'react';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Footer() {
+    const [email, setEmail] = useState("");
+    const [msg, setMsg] = useState("");
+
+    const handleSubscribe = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            const res = await axios.post(`${apiUrl}/api/newsletter/subscribe`, {
+                email,
+            });
+            const data = res.data;
+            console.log("Subscription response:", data);
+            setMsg(data.message);
+            setEmail(""); // Clear the input field after successful subscription
+        } catch (error) {
+            console.error("Subscription error:", error);
+            setMsg(error.response.data.message || "Subscription failed");
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <footer className="bg-pink">
             <div className="mt-32 mb-14 xxs:mx-5 sm:mx-5 lg:mx-24 2xl:mx-40">
@@ -161,25 +187,31 @@ export default function Footer() {
                     </div>
 
                     {/* Newsletter */}
-                    <div className="text-center md:text-left py-5">
-                        <h3 className="text-xl font-bold mb-4">Newsletter</h3>
-                        <p className="text-gray-700 mb-4">
+                    <div className="py-5">
+                        <h2 className="text-xl font-semibold mb-3">
+                            Subscribe for Updates
+                        </h2>
+                        <p className="text-gray-600 mb-4">
                             Subscribe to our newsletter for the latest updates.
                         </p>
-                        <form className="flex flex-col space-y-3">
+                        <form onSubmit={handleSubscribe} action="">
                             <input
                                 type="email"
-                                placeholder="Your email"
-                                className="px-4 py-2 border border-gray-300 rounded"
-                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder="Your Email"
+                                className="w-full p-2 border border-[#55555570] mb-3 outline-none focus:ring-1 focus:ring-gray-200 rounded"
                             />
                             <button
-                                type="submit"
-                                className="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-800"
+                                className="w-full py-2 px-5 border border-[#55555570] rounded
+        bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%"
                             >
                                 Subscribe
                             </button>
                         </form>
+                        {msg && (
+                            <p className="mt-3 text-sm font-medium text-green-600">{msg}</p>
+                        )}
                     </div>
                 </div>
 

@@ -30,9 +30,9 @@ export default function Techweuse({ techList, techIcons }) {
             {/* Technology Icons */}
             <section className="pb-32 px-4 lg:px-0">
                 <div className="container mx-auto grid grid-cols-2 sm:grid-cols-5 gap-8 items-center justify-center">
-                    {techIcons.map((tech) => (
+                    {techIcons.map((tech, index) => (
                         <motion.div
-                            key={tech.id}
+                            key={index}
                             className="flex justify-center items-center border border-[#55555580] py-10"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}

@@ -5,6 +5,7 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import Techweuse from "@/components/Techweuse";
 import Breadcrumb from "@/components/Breadcrumb";
+import Head from "next/head";
 import {
     FaFilm,
     FaPhotoVideo,
@@ -100,13 +101,43 @@ export default function VideoEditingService() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Professional Video Editing Services | Kriyona Infotech</title>
+            <Head>
+                <title>Video Editing Services in Surat | Reels, Promos, and Social Media</title>
                 <meta
                     name="description"
-                    content="Award-winning video editing & motion graphics services. Specialists in social media content, promotional videos, and cinematic edits using industry-standard tools."
+                    content="Professional video editing services in Surat by Kriyona Infotech. We edit reels, promos, ads, corporate videos, and social media content to perfection."
                 />
-            </Helmet> */}
+                <meta
+                    name="keywords"
+                    content="video editing Surat, reel editing, promotional video editing, social media video editor, corporate video editing"
+                />
+                <meta name="author" content="Kriyona Infotech" />
+
+                <meta
+                    property="og:title"
+                    content="Video Editing Company in Surat | Kriyona Infotech"
+                />
+                <meta
+                    property="og:description"
+                    content="Boost your brand with polished video content. Kriyona Infotech provides expert editing for reels, promos, ads & more. Let your content shine!"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.kriyonainfotech.com/services/video-editing"
+                />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/ve/video-editing-hero.jpg"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <link
+                    rel="canonical"
+                    href="https://www.kriyonainfotech.com/services/video-editing"
+                />
+            </Head>
+
 
             <div className="container mx-auto">
                 <Breadcrumb paths={breadcrumbPaths} />

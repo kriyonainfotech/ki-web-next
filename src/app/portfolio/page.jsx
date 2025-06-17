@@ -1,10 +1,36 @@
 'use client';
 import React from "react";
 import CTASection from "@/components/CTASection";
+import Head from "next/head";
 
 export default function Portfolio() {
     return (
         <div>
+            <Head>
+                <title>Portfolio | Kriyona Infotech's Website, App & Design Projects</title>
+                <meta
+                    name="description"
+                    content="Browse Kriyona Infotech’s portfolio showcasing custom websites, mobile apps, branding, UI/UX design, and digital marketing projects delivered to clients across industries."
+                />
+                <meta
+                    name="keywords"
+                    content="Kriyona Infotech portfolio, web design showcase, app development work, branding projects, UI/UX case studies, Surat IT agency work"
+                />
+                <meta property="og:title" content="Portfolio | Kriyona Infotech" />
+                <meta
+                    property="og:description"
+                    content="See how Kriyona Infotech brings digital ideas to life through web development, mobile apps, branding, and UI/UX design. Real results. Real clients."
+                />
+                <meta property="og:url" content="https://kriyonainfotech.com/portfolio" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/kriyona-infotech-logo1.png"
+                />
+                <link rel="canonical" href="https://kriyonainfotech.com/portfolio" />
+            </Head>
+
+
             <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40 mb-24">
                 <div className="bg-hero-grid mt-5">
                     <div className="border border-[#55555580] xxs:p-2 sm:p-10 md:px-20 xxs:pt-10 sm:pt-20">

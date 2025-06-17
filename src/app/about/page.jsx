@@ -1,6 +1,7 @@
 'use client' // Only if you're in App Router (`app/` folder) and using state
 
 import React, { useState } from 'react';
+import Head from "next/head";
 
 export default function About() {
     // State to keep track of the currently opened accordion
@@ -14,53 +15,52 @@ export default function About() {
     // Accordion data
     const accordionData = [
         {
-            question:
-                "What services does Kriyona Infotech provide in software and digital development?",
+            question: "What digital services does Kriyona Infotech offer?",
             answer:
-                "Kriyona Infotech specializes in a wide range of digital services, including custom software development, AI integration, web development, mobile app development (iOS & Android), UI/UX design, and digital marketing. We deliver tailored technology solutions to help businesses grow, streamline operations, and improve user engagement.",
+                "Kriyona Infotech offers custom software development, AI integration, website development, mobile app development (Android & iOS), UI/UX design, branding, and digital marketing services. We help businesses grow with tech-driven solutions tailored to their goals.",
         },
         {
-            question:
-                "How experienced is Kriyona Infotech in the IT and software industry?",
+            question: "How experienced is the team at Kriyona Infotech?",
             answer:
-                "Kriyona Infotech may be a relatively new IT company with one year of experience, but our team comprises seasoned developers, designers, and strategists. We have already delivered several successful software and mobile app projects to startups, SMEs, and enterprise clients.",
+                "Although Kriyona Infotech is a young company, our team brings years of hands-on experience in software development, mobile apps, and digital strategy. We've successfully delivered projects for startups, SMEs, and enterprise clients across various industries.",
         },
         {
-            question:
-                "Why should businesses choose Kriyona Infotech over other IT companies?",
+            question: "What makes Kriyona Infotech different from other IT companies?",
             answer:
-                "Kriyona Infotech stands out with its client-centric approach, agile development methodology, and a strong focus on quality and innovation. Unlike generic software providers, we offer personalized digital solutions that align with your business goals, timelines, and budgets.",
+                "We focus on personalized, scalable solutions that match your business needs—not cookie-cutter templates. Our agile development approach, transparent communication, and design-first thinking set us apart from traditional IT vendors.",
         },
         {
-            question:
-                "Which industries does Kriyona Infotech serve with its digital solutions?",
+            question: "Which industries do you work with?",
             answer:
-                "We work with businesses across diverse sectors, including e-commerce, healthcare, education, real estate, and manufacturing. Our team understands industry-specific challenges and crafts software, web platforms, and mobile apps tailored to your niche.",
+                "We’ve built tech solutions for clients in e-commerce, real estate, healthcare, education, manufacturing, and more. Whether you're a startup or an established brand, we tailor our solutions to your specific industry and use case.",
         },
         {
-            question: "What technologies does Kriyona Infotech use in its projects?",
+            question: "Which technologies do you use in your projects?",
             answer:
-                "We use cutting-edge technologies like React.js, Node.js, Flutter, MongoDB, AWS, and AI APIs. Our tech stack is selected based on project requirements to ensure scalability, performance, and future growth.",
+                "We use a modern tech stack including React.js, Node.js, Next.js, Flutter, MongoDB, Express, AWS, Firebase, and third-party AI APIs. Our tech choices ensure performance, security, and scalability for your digital products.",
         },
         {
-            question: "How can I get started with a project at Kriyona Infotech?",
+            question: "How do I start a project with Kriyona Infotech?",
             answer:
-                "Getting started is simple! Contact us through our website or WhatsApp. We’ll schedule a free consultation to understand your business goals, suggest a solution roadmap, and offer a detailed proposal tailored to your budget and timeline.",
+                "Just reach out via our contact form or WhatsApp. We'll schedule a free consultation, understand your goals, and provide a roadmap + detailed quote customized for your needs and budget.",
         },
     ];
 
+
     return (
         <div>
-            {/* <Helmet>
-                <title>
-                    Custom Software, Web, AI & Mobile App Development Agency in India |
-                    About Kriyona Infotech
-                </title>
-                <meta
-                    name="description"
-                    content="Kriyona Infotech offers custom software, AI, web and mobile app development. Learn more about our values, services, and team."
-                />
+            <Head>
+                <title>About Us | Kriyona Infotech - Custom IT & Software Solutions in Surat</title>
+                <meta name="description" content="Learn more about Kriyona Infotech – a creative IT company in Surat delivering expert web development, software, app design, and marketing solutions." />
+                <meta name="keywords" content="about Kriyona Infotech, IT company Surat, software company in India, team of developers Surat, digital agency" />
+                <meta name="author" content="Kriyona Infotech" />
+                <meta property="og:title" content="About Us | Kriyona Infotech - IT Solutions in Surat" />
+                <meta property="og:description" content="We're a passionate team of tech experts and creatives offering custom IT solutions in Surat. Let’s build your digital future." />
+                <meta property="og:url" content="https://kriyonainfotech.com/about" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://www.kriyonainfotech.com/kriyona-infotech-logo1.png" />
                 <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://kriyonainfotech.com/about" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -75,7 +75,7 @@ export default function About() {
                         })),
                     })}
                 </script>
-            </Helmet> */}
+            </Head>
             <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40">
                 <div className="bg-hero-grid mt-5 ">
                     <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-40">
@@ -83,9 +83,12 @@ export default function About() {
                             className="xxs:text-xl xs:text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
                             style={{ lineHeight: "50px" }}
                         >
-                            Empowering Businesses with Custom Software, Web, AI, and Mobile
-                            App Development – Building an Inclusive Digital Future
+                            Kriyona Infotech – Empowering Businesses with Custom Software, Web, Mobile & AI Solutions from India
                         </h1>
+                        <p className="text-xl mt-7 text-[#222222] xxs:w-auto xl:w-5/6 mx-auto">
+                            We’re a forward-thinking IT company in India delivering cutting-edge digital solutions to help brands grow, innovate, and lead in the digital age.
+                        </p>
+
                     </div>
                 </div>
                 <div
@@ -94,32 +97,30 @@ export default function About() {
                 >
                     <section className="text-center py-20">
                         <h2>About Us</h2>
-                        <h3 className="xs:text-2xl md:text-3xl lg:text-4xl w-5/6 text-primary-black font-bold mt-5 mx-auto">
-                            We Are Professional And Experienced Team
+                        <h3 className="xs:text-2xl md:text-3xl lg:text-4xl w-4/6 text-primary-black font-bold mt-5 mx-auto">
+                            A Passionate Tech Team Powering Digital Growth
                         </h3>
 
-                        <p className="mt-10 text-base sm:text-lg text-gray-700 max-w-7xl mx-auto leading-relaxed">
-                            At <strong>Kriyona Infotech</strong>, we specialize in{" "}
-                            <strong>custom software development</strong>,
-                            <strong>web and mobile app development</strong>, and cutting-edge{" "}
-                            <strong>Digital solutions</strong> tailored to help startups and
-                            enterprises grow digitally. Our dedicated team of developers,
-                            designers, and strategists is committed to building scalable and
-                            impactful digital products that align with your business goals.
+                        <p className="mt-10 text-base sm:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed">
+                            <strong>Kriyona Infotech</strong> is a leading IT company based in <strong>Surat, India</strong>,
+                            offering expert solutions in <strong>custom software development</strong>, <strong>web development</strong>,
+                            <strong>mobile app development</strong>, and innovative <strong>digital products</strong>.
+                            We help startups and enterprises transform their ideas into scalable, user-friendly solutions.
                         </p>
-                        <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-7xl mx-auto leading-relaxed">
-                            Based in <strong>Surat,India</strong>, we combine innovation with
-                            expertise to deliver seamless user experiences, intuitive
-                            interfaces, and powerful backend systems. Whether you're a startup
-                            or an established brand, Kriyona Infotech is your trusted
-                            technology partner for digital transformation.
+
+                        <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed">
+                            Our experienced team of developers, designers, and strategists blends creativity with technology
+                            to build seamless experiences—from modern interfaces to robust backend systems.
+                            Whether you're launching a new product or optimizing an existing one, we're here to bring your digital vision to life.
                         </p>
+
                     </section>
                 </div>
                 <section className="border border-black-border mt-20">
-                    <h3 className="xs:text-2xl md:text-3xl lg:text-4xl w-full text-center text-primary-black font-bold my-10 mx-auto">
-                        FAQs – Learn More About Kriyona Infotech
+                    <h3 className="xs:text-2xl md:text-3xl lg:text-4xl w-4/6 text-center text-primary-black font-bold my-10 mx-auto">
+                        Frequently Asked Questions About Kriyona Infotech's Services
                     </h3>
+
                     {accordionData.map((item, index) => (
                         <div className="accordion px-5" key={index}>
                             <div

@@ -1,4 +1,5 @@
 'use client';
+
 import CTASection from "@/components/CTASection";
 import { TbDeviceMobileCode } from "react-icons/tb";
 import { SlEnergy } from "react-icons/sl";
@@ -8,6 +9,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { motion } from "framer-motion";
 import Techweuse from "@/components/Techweuse";
+import Head from "next/head";
 
 export default function MobileAppDevelopment() {
 
@@ -132,22 +134,43 @@ export default function MobileAppDevelopment() {
 
   return (
     <>
-      {/* <Helmet>
-                <title>Mobile App Development Services | Kriyona Infotech</title>
-                <meta
-                    name="description"
-                    content="Expert mobile app development for Android & iOS using Flutter and React Native. Build high-performance, scalable mobile applications with our skilled team."
-                />
-                <meta
-                    name="keywords"
-                    content="mobile app development, flutter development, react native, android app, ios app, cross-platform apps"
-                />
-                <link
-                    rel="canonical"
-                    href="https://www.kriyona.com/services/mobile-app-development"
-                />
-                <script type="application/ld+json">
-                    {`
+      <Head>
+        <title>Mobile App Development Company in Surat | iOS & Android Solutions</title>
+        <meta
+          name="description"
+          content="Build cutting-edge mobile apps with Kriyona Infotech. We offer custom iOS & Android app development services in Surat for startups & businesses."
+        />
+        <meta
+          name="keywords"
+          content="mobile app development Surat, app developers in Surat, Android app development, iOS app development, custom app development company"
+        />
+        <meta name="author" content="Kriyona Infotech" />
+
+        <meta
+          property="og:title"
+          content="App Development Company in Surat | iOS & Android Experts"
+        />
+        <meta
+          property="og:description"
+          content="Kriyona Infotech builds powerful Android & iOS mobile apps tailored to your business needs. Trusted app development company in Surat."
+        />
+        <meta
+          property="og:url"
+          content="https://www.kriyonainfotech.com/services/app-development"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://kriyonainfotech.com/services/app-development-hero.png"
+        />
+
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://www.kriyonainfotech.com/services/app-development"
+        />
+        <script type="application/ld+json">
+          {`
             {
               "@context": "https://schema.org",
               "@type": "Service",
@@ -155,13 +178,13 @@ export default function MobileAppDevelopment() {
               "provider": {
                 "@type": "Organization",
                 "name": "Kriyona Infotech",
-                "url": "https://www.kriyona.com"
+                "url": "https://www.kriyonainfotech.com"
               },
               "description": "Professional mobile application development services for Android and iOS platforms using Flutter and React Native technologies.",
               "offers": {
                 "@type": "Offer",
                 "price": "Varies",
-                "priceCurrency": "USD"
+                "priceCurrency": "IND"
               },
               "areaServed": {
                 "@type": "Country",
@@ -169,8 +192,8 @@ export default function MobileAppDevelopment() {
               }
             }
           `}
-                </script>
-            </Helmet> */}
+        </script>
+      </Head>
 
       <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
         <Breadcrumb paths={breadcrumbPaths} />

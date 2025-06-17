@@ -1,4 +1,5 @@
 'use client' // only if you're in app directory and need interactivity
+import Head from "next/head";
 
 import React from 'react'
 
@@ -170,13 +171,29 @@ const pricingServices = [
 export default function Pricing() {
     return (
         <div>
-            {/* <Helmet>
-                <title>Transparent Pricing | Kriyona Infotech Services</title>
+            <Head>
+                <title>Pricing Packages | Website, App, Branding & Marketing – Kriyona Infotech</title>
                 <meta
                     name="description"
-                    content="Get competitive pricing for web development, app creation, branding, and digital marketing services. Download our full pricing guide."
+                    content="Explore affordable pricing packages by Kriyona Infotech for web development, app development, logo design, SEO, branding, and digital marketing. Transparent and value-packed plans."
                 />
-            </Helmet> */}
+                <meta
+                    name="keywords"
+                    content="Kriyona Infotech pricing, website development packages, app development pricing, SEO services, branding pricing, Surat IT company"
+                />
+                <meta property="og:title" content="Pricing Packages | Kriyona Infotech" />
+                <meta
+                    property="og:description"
+                    content="Check out Kriyona Infotech’s transparent pricing for custom websites, mobile apps, branding, design, and digital marketing services tailored to your business."
+                />
+                <meta property="og:url" content="https://kriyonainfotech.com/pricing" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/kriyona-infotech-logo1.png"
+                />
+                <link rel="canonical" href="https://kriyonainfotech.com/pricing" />
+            </Head>
 
             <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40 my-20">
                 {/* Hero Section */}

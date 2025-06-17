@@ -1,20 +1,47 @@
 'use client';
 import React from "react";
 import CTASection from "@/components/CTASection";
+import Head from "next/head";
 
 export default function OurProcess() {
     return (
         <div>
+            <Head>
+                <title>Our Process | How Kriyona Infotech Builds Web, App & Software Solutions</title>
+                <meta
+                    name="description"
+                    content="Discover Kriyona Infotech's step-by-step process for custom software, mobile app, and website development. From idea to deployment, we ensure smooth, scalable delivery."
+                />
+                <meta
+                    name="keywords"
+                    content="software development process, web development steps, mobile app workflow, Kriyona Infotech development cycle, IT agency process Surat"
+                />
+                <meta property="og:title" content="Our Process | Kriyona Infotech" />
+                <meta
+                    property="og:description"
+                    content="Explore how Kriyona Infotech transforms your ideas into successful digital products with a clear, agile, and collaborative development process."
+                />
+                <meta property="og:url" content="https://kriyonainfotech.com/ourprocess" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/kriyona-infotech-logo1.png"
+                />
+                <link rel="canonical" href="https://kriyonainfotech.com/ourprocess" />
+            </Head>
+
+
             <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40">
                 {/* Hero Section */}
                 <div className="bg-hero-grid mt-5 h-auto">
                     <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-40">
-                        <h1 className="xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold leading-tight text-[#222222]">
-                            Our Process
+                        <h1 className="xxs:text-xl xs:text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
+                            style={{ lineHeight: "50px" }}
+                        >
+                            Our Development Process – From Vision to Scalable Digital Solutions
                         </h1>
-                        <p className="text-xl mt-7 text-[#222222] xxs:w-auto xl:w-4/6 mx-auto">
-                            We Team Up With Visionary Companies To Shape And Bring To Life
-                            Their Innovative Business Ideas.
+                        <p className="text-xl mt-7 text-[#222222] xxs:w-auto xl:w-5/6 mx-auto">
+                            At Kriyona Infotech, we collaborate with startups, SMEs, and enterprises to turn innovative ideas into powerful software, web, and mobile app solutions – with a transparent and agile development approach.
                         </p>
                     </div>
                 </div>
@@ -29,6 +56,20 @@ export default function OurProcess() {
                 <img alt="AR/VR Development" loading="lazy" width={80} height={80} decoding="async" data-nimg={1} className="mx-auto my-10 h-[100px]" style={{ color: 'transparent' }} src="/vr.svg" />
                 <p>AR/VR Development</p>
               </div> */}
+                    <div className="border border-black-border pb-7">
+                        <img
+                            alt="UI/UX Design"
+                            loading="lazy"
+                            width={80}
+                            height={80}
+                            decoding="async"
+                            data-nimg={1}
+                            className="mx-auto my-10 h-[100px]"
+                            style={{ color: "transparent" }}
+                            src="/ui-ux.svg"
+                        />
+                        <p>UI/UX Design</p>
+                    </div>
                     <div className="border border-black-border pb-7">
                         <img
                             alt="Game Development"
@@ -83,7 +124,7 @@ export default function OurProcess() {
                             style={{ color: "transparent" }}
                             src="/animation.svg"
                         />
-                        <p>Animation</p>
+                        <p>Search Engine Optimisation (SEO)</p>
                     </div>
                     <div className="border border-black-border pb-7">
                         <img
@@ -97,62 +138,45 @@ export default function OurProcess() {
                             style={{ color: "transparent" }}
                             src="/cloud.svg"
                         />
-                        <p>Cloud And DevOps</p>
+                        <p>Digital Marketing</p>
                     </div>
-                    <div className="border border-black-border pb-7">
-                        <img
-                            alt="UI/UX Design"
-                            loading="lazy"
-                            width={80}
-                            height={80}
-                            decoding="async"
-                            data-nimg={1}
-                            className="mx-auto my-10 h-[100px]"
-                            style={{ color: "transparent" }}
-                            src="/ui-ux.svg"
-                        />
-                        <p>UI/UX Design</p>
-                    </div>
+
                 </div>
 
                 {/* Specialization Section */}
                 <div className="text-center mt-20  border border-black-border py-20">
                     <h2 className="text-3xl font-semibold text-[#222222]">
-                        We Specialize In
+                        We Specialize in Scalable Web, App & Software Solutions
                     </h2>
-                    <p className="text-xl mt-7 text-[#222222] mx-auto w-4/6">
-                        Projects that combine business strategy and technology, enabling our
-                        customers to bring the right mix of process, innovation, experience,
-                        and imagination to each part of their web and mobile-based tasks.
+                    <p className="text-lg mt-7 text-[#222222] mx-auto w-4/6">
+                        Our team blends business strategy, creative design, and smart technology to craft web, mobile app, and software solutions that solve real problems and drive growth. Every project is built with the perfect mix of innovation, functionality, and user experience.
                     </p>
+
                 </div>
 
                 {/* Key Pillars Section */}
                 <div className="grid sm:grid-cols-3 gap-0 mb-20">
                     <div className="text-center border border-black-border py-20 px-10">
-                        <h3 className="text-2xl font-semibold text-[#222222]">
-                            Transparency
-                        </h3>
+                        <h3 className="text-2xl font-semibold text-[#222222]">Transparency</h3>
                         <p className="mt-4 text-lg text-[#555555]">
-                            Our primary goal has always been to put forth constant effort and
-                            drive the growth of the client's business.
+                            We believe in clear communication, honest timelines, and full project visibility — no hidden fees, no vague promises. Just clean, collaborative work.
                         </p>
                     </div>
+
                     <div className="text-center border border-black-border py-20 px-10">
                         <h3 className="text-2xl font-semibold text-[#222222]">Fairness</h3>
                         <p className="mt-4 text-lg text-[#555555]">
-                            Regardless of how big or little the client's requirement is, we
-                            treat every job with the same importance and put our best effort
-                            forward.
+                            Whether it’s a landing page or a full-scale app, we treat every project with equal importance — because your business matters, no matter the size.
                         </p>
                     </div>
+
                     <div className="text-center border border-black-border py-20 px-10">
                         <h3 className="text-2xl font-semibold text-[#222222]">Focus</h3>
                         <p className="mt-4 text-lg text-[#555555]">
-                            While working on any company decision-making process, we are
-                            adamant about keeping complete openness.
+                            We stay laser-focused on delivering results. Every decision is backed by data, collaboration, and the goal of building software that actually works for you.
                         </p>
                     </div>
+
                 </div>
 
                 {/* Closing Section */}

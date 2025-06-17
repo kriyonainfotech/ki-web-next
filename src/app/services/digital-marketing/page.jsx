@@ -12,6 +12,7 @@ import {
     FaHashtag,
     FaRegLightbulb,
 } from "react-icons/fa";
+import Head from "next/head";
 
 export default function DigitalMarketing() {
 
@@ -50,13 +51,45 @@ export default function DigitalMarketing() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Digital Marketing Solutions | Kriyona Infotech</title>
+            <Head>
+                <title>Digital Marketing Company in Surat | SEO, Social Media & Ads</title>
                 <meta
                     name="description"
-                    content="Full-spectrum digital marketing services driving growth through Google Ads, Meta campaigns, SEO, and social media strategies. Data-driven results guaranteed."
+                    content="Boost your online presence with Kriyona Infotech’s digital marketing services in Surat. We offer SEO, social media marketing, Google Ads & more."
                 />
-            </Helmet> */}
+                <meta
+                    name="keywords"
+                    content="digital marketing Surat, SEO services Surat, social media marketing, Google ads agency, online marketing company"
+                />
+                <meta name="author" content="Kriyona Infotech" />
+
+                <meta
+                    property="og:title"
+                    content="Top Digital Marketing Agency in Surat | Kriyona Infotech"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Result-driven digital marketing services including SEO, PPC, content marketing, and social media ads. Trusted by Surat-based businesses."
+                />
+
+                <meta
+                    property="og:url"
+                    content="https://www.kriyonainfotech.com/services/digital-marketing"
+                />
+
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:image"
+                    content="https://kriyonainfotech.com/dm/digital-marketing-hero.png"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <link
+                    rel="canonical"
+                    href="https://www.kriyonainfotech.com/services/digital-marketing"
+                />
+            </Head>
 
             <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
                 <Breadcrumb paths={breadcrumbPaths} />

@@ -71,10 +71,10 @@ export default function ContactUs() {
 
 
             <div className="bg-hero-grid py-20 px-4 border border-[#55555580]">
-                <h1 className="text-center text-4xl font-semibold text-[#222222]">
+                <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
                     Contact Us
                 </h1>
-                <p className="text-center text-xl text-[#888888] mt-5">
+                <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                     Have questions or want to get in touch? We’re here to help!
                 </p>
             </div>

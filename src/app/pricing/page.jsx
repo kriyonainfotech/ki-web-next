@@ -5,13 +5,58 @@ import React from 'react'
 
 const pricingServices = [
     {
-        title: "Branding",
+        title: "Website Development",
         features: [
-            "Complete brand identity and logo design",
-            "Business card, letterhead & color palette",
-            "Multiple revisions and essential files delivered",
+            "Responsive website design and development",
+            "SEO-friendly and fast loading pages",
+            "CMS integration and eCommerce support",
         ],
-        pdfLink: "/packages/branding.pdf",
+        pdfLink: "/packages/website-development.pdf",
+    },
+    {
+        title: "Mobile App Development",
+        features: [
+            "Cross-platform mobile app solutions",
+            "Fast development with native-like performance",
+            "UI/UX design integration and testing",
+        ],
+        pdfLink: "/packages/flutter-app.pdf",
+    },
+    {
+        title: "Software Development",
+        features: [
+            "Custom software built on Flutter framework",
+            "Seamless performance on all platforms",
+            "Ongoing support and maintenance options",
+        ],
+        pdfLink: "/packages/flutter-software.pdf",
+    },
+    {
+        title: "Server Management",
+        features: [
+            "Server setup, configuration, and monitoring",
+            "Security hardening and updates",
+            "Backup and disaster recovery plans",
+        ],
+        pdfLink: "/packages/server-management.pdf",
+    },
+    {
+        title: "Web Hosting & Domain Services",
+        features: [
+            "Reliable web hosting with uptime guarantee",
+            "Domain registration and management",
+            "SSL setup and security monitoring",
+        ],
+        pdfLink: "/packages/web-hosting.pdf",
+    },
+    {
+        title: "SEO",
+        features: [
+            "On-page and off-page optimization",
+            "Keyword research and analysis",
+            "Regular performance reporting",
+        ],
+        pdfLink: "/packages/seo.pdf",
     },
     {
         title: "Cloud Service",
@@ -23,31 +68,22 @@ const pricingServices = [
         pdfLink: "/packages/cloud-service.pdf",
     },
     {
-        title: "Flutter App Development",
+        title: "Branding",
         features: [
-            "Cross-platform mobile app solutions",
-            "Fast development with native-like performance",
-            "UI/UX design integration and testing",
+            "Complete brand identity and logo design",
+            "Business card, letterhead & color palette",
+            "Multiple revisions and essential files delivered",
         ],
-        pdfLink: "/packages/flutter-app.pdf",
+        pdfLink: "/packages/branding.pdf",
     },
     {
-        title: "Flutter Software Development",
+        title: "Social Media Management",
         features: [
-            "Custom software built on Flutter framework",
-            "Seamless performance on all platforms",
-            "Ongoing support and maintenance options",
+            "Custom content creation and scheduling",
+            "Engagement and growth strategies",
+            "Performance tracking with reports",
         ],
-        pdfLink: "/packages/flutter-software.pdf",
-    },
-    {
-        title: "Invitation Card",
-        features: [
-            "Custom digital invitation design",
-            "Multiple concepts with revisions",
-            "Ready-to-share JPG/PNG formats",
-        ],
-        pdfLink: "/packages/invitation.pdf",
+        pdfLink: "/packages/smm.pdf",
     },
     {
         title: "IT Consulting",
@@ -57,15 +93,6 @@ const pricingServices = [
             "Scalable solution recommendations",
         ],
         pdfLink: "/packages/it-consulting.pdf",
-    },
-    {
-        title: "Logo Design",
-        features: [
-            "Creative logo concepts tailored to your brand",
-            "Revision rounds for refinement",
-            "All formats delivered for versatile use",
-        ],
-        pdfLink: "/packages/logo-design.pdf",
     },
     {
         title: "Marketing Service",
@@ -86,31 +113,22 @@ const pricingServices = [
         pdfLink: "/packages/product-designing.pdf",
     },
     {
-        title: "SEO",
+        title: "Logo Design",
         features: [
-            "On-page and off-page optimization",
-            "Keyword research and analysis",
-            "Regular performance reporting",
+            "Creative logo concepts tailored to your brand",
+            "Revision rounds for refinement",
+            "All formats delivered for versatile use",
         ],
-        pdfLink: "/packages/seo.pdf",
+        pdfLink: "/packages/logo-design.pdf",
     },
     {
-        title: "Server Management",
+        title: "Invitation Card",
         features: [
-            "Server setup, configuration, and monitoring",
-            "Security hardening and updates",
-            "Backup and disaster recovery plans",
+            "Custom digital invitation design",
+            "Multiple concepts with revisions",
+            "Ready-to-share JPG/PNG formats",
         ],
-        pdfLink: "/packages/server-management.pdf",
-    },
-    {
-        title: "Social Media Management",
-        features: [
-            "Custom content creation and scheduling",
-            "Engagement and growth strategies",
-            "Performance tracking with reports",
-        ],
-        pdfLink: "/packages/smm.pdf",
+        pdfLink: "/packages/invitation.pdf",
     },
     {
         title: "UI/UX",
@@ -129,24 +147,6 @@ const pricingServices = [
             "Print-ready formats delivery",
         ],
         pdfLink: "/packages/visiting-card.pdf",
-    },
-    {
-        title: "Web Hosting & Domain Services",
-        features: [
-            "Reliable web hosting with uptime guarantee",
-            "Domain registration and management",
-            "SSL setup and security monitoring",
-        ],
-        pdfLink: "/packages/web-hosting.pdf",
-    },
-    {
-        title: "Website Development",
-        features: [
-            "Responsive website design and development",
-            "SEO-friendly and fast loading pages",
-            "CMS integration and eCommerce support",
-        ],
-        pdfLink: "/packages/website-development.pdf",
     },
     {
         title: "Wedding Invitation Card",
@@ -199,10 +199,10 @@ export default function Pricing() {
                 {/* Hero Section */}
                 <div className="bg-hero-grid mt-5">
                     <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-20 md:py-28">
-                        <h1 className="text-2xl sm:text-4xl font-bold text-gray-900">
+                        <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
                             Straightforward Pricing for Digital Excellence
                         </h1>
-                        <p className="text-xl mt-5 text-primary-black w-auto xl:w-4/6 mx-auto">
+                        <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                             Quality solutions with transparent pricing. No hidden fees, just exceptional value.
                         </p>
                     </div>
@@ -219,7 +219,7 @@ export default function Pricing() {
                             className="border border-black-border rounded-lg p-8 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                         >
                             <h3
-                                className="text-2xl font-extrabold mb-5 bg-gradient-to-b from-purple-900 to-pink-900 bg-clip-text text-transparent"
+                                className="text-2xl font-extrabold mb-5 bg-gradient-to-b from-purple-700 to-pink-600 bg-clip-text text-transparent"
                                 style={{ lineHeight: "1.2" }}
                             >
                                 {title}
@@ -236,19 +236,7 @@ export default function Pricing() {
                                 <a
                                     href={pdfLink}
                                     download
-                                    className="inline-block px-6 py-3 rounded-full font-medium text-white transition-all duration-300 bg-[length:300%] bg-left hover:bg-right"
-                                    style={{
-                                        background:
-                                            "linear-gradient(90deg, #db2777, #7e22ce, #3b82f6)", // pink-600 → purple-700 → blue-500
-                                        backgroundSize: "300%",
-                                        backgroundPosition: "left",
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.backgroundPosition = "right";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.backgroundPosition = "left";
-                                    }}
+                                    className="inline-block px-6 py-3 rounded-full font-medium text-gray-900 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm  transition-all duration-300 bg-[length:300%] bg-left hover:bg-right"
                                 >
                                     Download Pricing Guide
                                 </a>
@@ -259,40 +247,47 @@ export default function Pricing() {
                 </div>
 
                 {/* Value Section */}
-                <div className="border border-black-border mt-20 py-16 text-center">
-                    <h2 className="text-3xl font-bold text-primary-black mb-6">
+                <div className="mt-20 py-20 px-6 md:px-12 border border-[#55555580] text-center">
+                    <h2 className="text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
                         Why Our Pricing Works
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-                        <div className="p-6">
-                            <div className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#efc495] via-[#8f0f91] to-[#644c9c] mb-4">
-                                ✓
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">No Hidden Costs</h3>
-                            <p className="text-gray-600">All-inclusive pricing with clear deliverables</p>
-                        </div>
+                    <p className="text-gray-600 max-w-xl mx-auto mb-12">
+                        Transparent, flexible, and built to deliver real value — no fluff, just results.
+                    </p>
 
-                        <div className="p-6">
-                            <div className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#efc495] via-[#8f0f91] to-[#644c9c] mb-4">
-                                ↔
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {[
+                            {
+                                icon: "✓",
+                                title: "No Hidden Costs",
+                                desc: "All-inclusive pricing with clear deliverables"
+                            },
+                            {
+                                icon: "↔",
+                                title: "Flexible Options",
+                                desc: "Project-based or hourly engagement models"
+                            },
+                            {
+                                icon: "★",
+                                title: "Premium Value",
+                                desc: "Enterprise quality at competitive rates"
+                            }
+                        ].map((item, index) => (
+                            <div key={index} className="p-6 bg-gradient-to-br from-white via-[#f7f7ff] to-[#f2f2fa] shadow-lg hover:shadow-md transition-shadow duration-300">
+                                <div className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#efc495] via-[#8f0f91] to-[#644c9c] mb-4">
+                                    {item.icon}
+                                </div>
+                                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                                <p className="text-gray-600">{item.desc}</p>
                             </div>
-                            <h3 className="text-xl font-semibold mb-2">Flexible Options</h3>
-                            <p className="text-gray-600">Project-based or hourly engagement models</p>
-                        </div>
-
-                        <div className="p-6">
-                            <div className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#efc495] via-[#8f0f91] to-[#644c9c] mb-4">
-                                ★
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">Premium Value</h3>
-                            <p className="text-gray-600">Enterprise quality at competitive rates</p>
-                        </div>
+                        ))}
                     </div>
                 </div>
 
+
                 {/* CTA Section */}
-                <div className="border border-black-border mt-20 py-16 text-center">
-                    <h2 className="text-3xl font-bold text-primary-black mb-6">
+                <div className="mt-32 py-16 text-center shadow-lg bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm ">
+                    <h2 className="text-3xl font-bold mb-6">
                         Need Custom Pricing?
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto mb-10 px-4">
@@ -300,7 +295,7 @@ export default function Pricing() {
                     </p>
                     <a
                         href="/contactus"
-                        className="inline-block px-8 py-3 rounded-full bg-gradient-to-b  from-purple-700/80 to-pink-700/80 text-white font-semibold hover:opacity-90 transition-opacity duration-300"
+                        className="inline-flex items-center gap-2 bg-white text-purple-600 font-semibold px-6 py-3 rounded-full shadow-lg transition"
                     >
                         Get a Custom Quote
                     </a>

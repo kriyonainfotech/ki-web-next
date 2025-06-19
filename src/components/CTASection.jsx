@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export default function CTASection({ icon }) {
     return (
-        <section className="w-full flex justify-center px-4">
-            <div className="w-full max-w-7xl bg-gradient-to-r from-pink-600 via-purple-700 to-blue-500 py-16 px-8 text-white relative overflow-hidden rounded-xl shadow-lg">
+        <section className="w-full flex justify-center ">
+            <div className="w-full max-w-7xl bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm  py-16 px-8 relative overflow-hidden shadow-lg">
                 <div className="container mx-auto px-6 text-center">
                     <motion.h2
-                        className="text-3xl sm:text-4xl font-bold mb-4"
+                        className="text-3xl sm:text-4xl font-bold mb-7"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -18,7 +18,7 @@ export default function CTASection({ icon }) {
                     </motion.h2>
 
                     <motion.p
-                        className="text-lg mb-8 max-w-3xl mx-auto"
+                        className="text-gray-600 max-w-2xl mx-auto mb-10 px-4"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}

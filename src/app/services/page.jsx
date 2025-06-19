@@ -25,10 +25,10 @@ export default function Services() {
                 {/* Hero Section */}
                 <section className="hero-section text-center pb-20 animate-fade-in">
                     <div className="container mx-auto py-24 px-8 bg-gradient-to-b  from-purple-600/10 to-pink-500/10 backdrop-blur-sm border border-[#55555580]">
-                        <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
                             Transformative Tech Solutions
                         </h1>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                             Accelerate your digital transformation with our full-stack
                             development expertise and AI-powered solutions.
                         </p>
@@ -92,7 +92,7 @@ export default function Services() {
 
                                         <Link
                                             href={service.link}
-                                            className="inline-block px-6 py-3 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-500 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 font-medium hover:no-underline"
+                                            className="inline-block px-6 py-3 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm rounded-full transition-colors duration-300 font-medium hover:no-underline"
                                             aria-label={`Learn more about ${service.name}`}
                                         >
                                             Explore Solutions
@@ -106,11 +106,11 @@ export default function Services() {
 
                 {/* CTA Section */}
                 <section className="cta-section py-20 text-center">
-                    <div className="bg-gradient-to-r from-pink-600 via-purple-700 to-blue-500 backdrop-blur-sm rounded-2xl p-12 shadow-xl">
+                    <div className="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm rounded-2xl p-12 shadow-xl">
                         <h2 className="text-4xl font-bold text-white mb-6">
                             Ready to Revolutionize Your Tech Stack?
                         </h2>
-                        <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                        <p className="text-md text-gray-900 mb-8 max-w-2xl mx-auto">
                             Let's build something extraordinary together. Schedule a free tech
                             consultation today.
                         </p>

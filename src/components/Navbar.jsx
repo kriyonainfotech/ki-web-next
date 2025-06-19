@@ -42,7 +42,7 @@ export default function Navbar() {
                 className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'backdrop-blur-md shadow-md' : 'bg-transparent'
                     }`}
             >
-                <div className="px-10 lg:px-24 2xl:px-40 py-5">
+                <div className="px-5 lg:px-24 2xl:px-40 py-5">
                     <div className="flex items-center">
                         <div className="py-4 px-5 border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
                             <Link href="/">

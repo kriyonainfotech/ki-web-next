@@ -35,10 +35,10 @@ export default function Portfolio() {
                 <div className="bg-hero-grid mt-5">
                     <div className="border border-[#55555580] p-2 sm:p-10 md:px-20 pt-10 sm:pt-20">
                         <div className="mb-10 text-center sm:px-10 md:px-20 lg:px-0 xl:px-10">
-                            <h1 className="text-4xl sm:text-5xl xl:text-6xl font-semibold leading-tight text-[#222222]">
+                            <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
                                 Portfolio
                             </h1>
-                            <p className="text-xl mt-7 text-[#222222] w-auto xl:w-3/5 mx-auto">
+                            <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                                 We Team Up With Visionary Companies To Shape And Bring To Life
                                 Their Innovative Business Ideas.
                             </p>

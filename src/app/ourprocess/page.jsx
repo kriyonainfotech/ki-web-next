@@ -35,12 +35,11 @@ export default function OurProcess() {
                 {/* Hero Section */}
                 <div className="bg-hero-grid mt-5 h-auto">
                     <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-40">
-                        <h1 className="text-xl xs:text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
-                            style={{ lineHeight: "50px" }}
+                        <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
                         >
                             Our Development Process – From Vision to Scalable Digital Solutions
                         </h1>
-                        <p className="text-xl mt-7 text-[#222222] w-auto xl:w-5/6 mx-auto">
+                        <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                             At Kriyona Infotech, we collaborate with startups, SMEs, and enterprises to turn innovative ideas into powerful software, web, and mobile app solutions – with a transparent and agile development approach.
                         </p>
                     </div>

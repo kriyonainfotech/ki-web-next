@@ -57,10 +57,10 @@ export default function Blog() {
                 {/* Hero Section */}
                 <section className="text-center pt-0">
                     <div className="bg-hero-grid py-20 border border-[#55555580]">
-                        <h1 className="text-4xl sm:text-5xl xl:text-6xl font-semibold text-[#222]">
+                        <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
                             Our Blogs
                         </h1>
-                        <p className="text-lg text-gray-600 mt-4">
+                        <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                             Stay updated with the latest news, articles, and insights from
                             Kriyona Infotech.
                         </p>
@@ -115,7 +115,9 @@ export default function Blog() {
                     </div>
                 </section>
 
-                <CTASection />
+                <div className="pt-20">
+                    <CTASection />
+                </div>
             </div>
         </>
     );

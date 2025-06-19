@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import '../styles/scrollbar.css'
 import DisableInspect from "@/components/DisableInspect";
 import PageTransitionWrapper from "@/components/PageTransitionWrapper";
+import Script from "next/script";
 
 const roboto = Roboto_Mono({
   subsets: ['latin'],
@@ -37,6 +38,21 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" type="image/svg+xml" href="./kriyona-infotech-logo1.png" />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="1ootqa2tzJhVJi95attBbw" async></script>
+
+        {/* Google Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BYT9932ZEQ"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BYT9932ZEQ');
+          `}
+        </Script>
+
       </head>
       <body
         className={`${roboto.variable} ${montserrat.variable}`}

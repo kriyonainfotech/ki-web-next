@@ -78,14 +78,14 @@ export default function About() {
             </Head>
             <div className="px-5 sm:px-5 lg:px-24 2xl:px-40">
                 <div className="bg-hero-grid mt-5 ">
-                    <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-40">
+                    <div className="text-center px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-20 xl:py-36">
                         <h1
-                            className="text-xl xs:text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
-                            style={{ lineHeight: "50px" }}
+                            className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
+
                         >
                             Kriyona Infotech – Empowering Businesses with Custom Software, Web, Mobile & AI Solutions from India
                         </h1>
-                        <p className="text-xl mt-7 text-[#222222] w-auto xl:w-5/6 mx-auto">
+                        <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
                             We’re a forward-thinking IT company in India delivering cutting-edge digital solutions to help brands grow, innovate, and lead in the digital age.
                         </p>
 
@@ -93,31 +93,32 @@ export default function About() {
                 </div>
                 <div
                     className="mt-20 border border-black-border"
-                    style={{ padding: "20px" }}
                 >
                     <section className="text-center py-20">
-                        <h2>About Us</h2>
-                        <h3 className="xs:text-2xl md:text-3xl lg:text-4xl w-4/6 text-primary-black font-bold mt-5 mx-auto">
+                        <h2 className='text-lg '>About Us</h2>
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl w-auto xl:w-4/6 text-primary-black font-bold mt-5 mx-auto">
                             A Passionate Tech Team Powering Digital Growth
                         </h3>
 
-                        <p className="mt-10 text-base sm:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed">
-                            <strong>Kriyona Infotech</strong> is a leading IT company based in <strong>Surat, India</strong>,
-                            offering expert solutions in <strong>custom software development</strong>, <strong>web development</strong>,
-                            <strong>mobile app development</strong>, and innovative <strong>digital products</strong>.
-                            We help startups and enterprises transform their ideas into scalable, user-friendly solutions.
-                        </p>
+                        <div className='px-5 text-center'>
+                            <p className="mt-10 text-md sm:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed">
+                                <strong>Kriyona Infotech</strong> is a leading IT company based in <strong>Surat, India</strong>,
+                                offering expert solutions in <strong>custom software development</strong>, <strong>web development</strong>,
+                                <strong>mobile app development</strong>, and innovative <strong>digital products</strong>.
+                                We help startups and enterprises transform their ideas into scalable, user-friendly solutions.
+                            </p>
 
-                        <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed">
-                            Our experienced team of developers, designers, and strategists blends creativity with technology
-                            to build seamless experiences—from modern interfaces to robust backend systems.
-                            Whether you're launching a new product or optimizing an existing one, we're here to bring your digital vision to life.
-                        </p>
+                            <p className="mt-4 text-md sm:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed">
+                                Our experienced team of developers, designers, and strategists blends creativity with technology
+                                to build seamless experiences—from modern interfaces to robust backend systems.
+                                Whether you're launching a new product or optimizing an existing one, we're here to bring your digital vision to life.
+                            </p>
+                        </div>
 
                     </section>
                 </div>
-                <section className="border border-black-border mt-20">
-                    <h3 className="xs:text-2xl md:text-3xl lg:text-4xl w-4/6 text-center text-primary-black font-bold my-10 mx-auto">
+                <section className="border border-black-border mt-20 px-5">
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl w-auto xl:w-4/6 text-center text-primary-black font-bold my-10 mx-auto">
                         Frequently Asked Questions About Kriyona Infotech's Services
                     </h3>
 
@@ -127,7 +128,7 @@ export default function About() {
                                 className="accordion-title border-b border-gray-600 py-4 px-5 sm:px-10 flex justify-between text-start items-center my-4 cursor-pointer "
                                 onClick={() => toggleAccordion(index)}
                             >
-                                <h4 className="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] from-43% to-[#FD98FF] to-100% lg:text-xl md:text-lg xs:text-base">
+                                <h4 className="text-lg xl:text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] from-43% to-[#FD98FF] to-100% lg:text-xl md:text-lg xs:text-base">
                                     {item.question}
                                 </h4>
                                 <svg

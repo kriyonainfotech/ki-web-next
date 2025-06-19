@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Technologies() {
+
     const [activeCategory, setActiveCategory] = useState("Frontend");
 
     const categories = {

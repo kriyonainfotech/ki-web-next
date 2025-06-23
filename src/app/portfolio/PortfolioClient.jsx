@@ -1,0 +1,259 @@
+'use client';
+import React from "react";
+import CTASection from "@/components/CTASection";
+
+export default function PortfolioClient() {
+    return (
+        <div>
+            <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 mb-24">
+                <div className="bg-hero-grid mt-5">
+                    <div className="border border-[#55555580] p-2 sm:p-10 md:px-20 pt-10 sm:pt-20">
+                        <div className="mb-10 text-center sm:px-10 md:px-20 lg:px-0 xl:px-10">
+                            <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
+                                Portfolio
+                            </h1>
+                            <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
+                                We Team Up With Visionary Companies To Shape And Bring To Life
+                                Their Innovative Business Ideas.
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-1 my-20">
+                            <div className="xl:hidden flex flex-wrap gap-4 mx-auto">
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    E-commerce
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Ai-Editors
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Games
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    International Apps
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Finance
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Websites
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    OTT Platforms
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Computer Vision
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Project Tracking
+                                </p>
+                                <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                    Health &amp; Fitness
+                                </p>
+                            </div>
+                            <div className="hidden xl:inline-grid gap-5">
+                                <div className="flex flex-wrap gap-4 mx-auto">
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        E-commerce
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Ai-Editors
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Games
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Finance
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Websites
+                                    </p>
+                                </div>
+                                <div className="flex flex-wrap gap-4 mx-auto">
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        OTT Platforms
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Computer Vision
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Project Tracking
+                                    </p>
+                                    <p className="bg-white w-fit px-6 py-2 rounded-full border border-[#55555580] mx-auto text-nowrap">
+                                        Health &amp; Fitness
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-grid pb-16 h-auto">
+                    <div className=" grid grid-cols-1 sm:grid-cols-2 w-full mx-auto">
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a>
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742367190/digi_zua8zf.png"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-start mt-5">
+                                    {/* <img src="/DiGiPosterPro.png" className='w-12 h-12' alt="" /> */}
+                                    <h3 className="text-xl font-semibold">DiGiPosterPro</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a>
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742367314/COE_ooxfoh.png"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-start mt-5">
+                                    {/* <img src="/colorsOfEarth.png" className='w-12 h-12' alt="" /> */}
+                                    <h3 className="text-xl font-semibold">ColorsOfEarth</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a target="_blank">
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742647843/ees121_vfdi93.png"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-start mt-5">
+                                    {/* <img
+                          src="/services/ess-121-CISEWOlG.png"
+                          className="w-auto h-14"
+                          alt=""
+                        /> */}
+                                    <h3 className="text-xl font-semibold">EES121</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a>
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742647845/eibm_wfwmqp.png"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-start mt-5">
+                                    {/* <img
+                          src="/eibmlogo.png"
+                          className="w-12 h-14 object-cover"
+                          alt=""
+                        /> */}
+                                    <h3 className="text-xl font-semibold">EIBM</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a>
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742647843/mmh_mdftik.png"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex items-start flex-col mt-5">
+                                    {/* <img src="/mymoviehubbg.png" className="w-auto h-14" alt="" /> */}
+                                    <h3 className="text-xl font-semibold">MyMovieHub</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a target="_blank">
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742647793/saaraa_cwivsc.png"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex items-start flex-col mt-5">
+                                    {/* <img
+                          src="/saraa-trends-bg_chr16j.png"
+                          className="w-auto h-14"
+                          alt=""
+                        /> */}
+                                    <h3 className="text-xl font-semibold">SaaraaTrends</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a target="_blank">
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742647843/krishaexim_anjui5.jpg"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex items-start flex-col mt-5">
+                                    {/* <img src="/worldclasse.avif" className="w-auto h-14" alt="" /> */}
+                                    <h3 className="text-xl font-semibold">WorldClassExport</h3>
+                                    <p className="pt-2">India , Global</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="border border-[#55555580] p-6 xl:p-14">
+                            <a target="_blank">
+                                <div className="border border-[#55555550] bg-white rounded overflow-hidden ">
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src="https://res.cloudinary.com/dd6vjyu3c/image/upload/v1742647790/wce_udwjoo.jpg"
+                                            alt="img"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex items-start flex-col mt-5">
+                                    {/* <img
+                          src="/services/krishaexim.png"
+                          className="w-auto h-14"
+                          alt=""
+                        /> */}
+                                    <h3 className="p-2  text-xl font-semibold">KrishaExim</h3>
+                                    <p className="pt-2">Dubai</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <CTASection />
+        </div>
+    )
+}

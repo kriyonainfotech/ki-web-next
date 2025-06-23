@@ -3,7 +3,7 @@ import Homepage from '@/components/Homepage'
 import Head from "next/head";
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         {/* Structured Data for SEO */}
         <script

@@ -52,7 +52,6 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-BYT9932ZEQ');
           `}
         </Script>
-
       </head>
       <body
         className={`${roboto.variable} ${montserrat.variable}`}

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaRegCopyright } from "react-icons/fa";
+import '../styles/footer.css'
 
 export default function Footer() {
     const [email, setEmail] = useState("");
@@ -217,61 +218,52 @@ export default function Footer() {
                 </div>
 
                 {/* Social Links */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 mx-auto mt-24 w-fit">
+                <div className="mt-24 flex flex-wrap justify-center gap-x-10 gap-y-6 max-w-md mx-auto lg:gap-x-5 lg:max-w-5xl">
                     <a
                         href="https://www.youtube.com/@KriyonaInfotech"
                         aria-label="YouTube"
-                        className="text-grey-500 text-2xl text-center border border-[#55555570] bg-white rounded p-3 w-fit hover:bg-gray-100"
+                        className="border border-[#55555570] bg-white rounded p-3 hover:bg-gray-100 w-14 h-14 flex items-center justify-center"
                     >
-                        <img
-                            src="/services/youtube.png"
-                            className="w-8 h-8"
-                            alt="YouTube"
-                        />
+                        <img src="/services/youtube.png" alt="YouTube" className="w-8 h-8" />
                     </a>
+
                     <a
                         href="https://www.linkedin.com/company/kriyonainfotech"
                         aria-label="LinkedIn"
-                        className="border border-[#55555570] bg-white rounded p-3 w-fit hover:bg-gray-100"
+                        className="border border-[#55555570] bg-white rounded p-3 hover:bg-gray-100 w-14 h-14 flex items-center justify-center"
                     >
-                        <img
-                            src="/services/linkedin.png"
-                            className="w-8 h-8"
-                            alt="LinkedIn"
-                        />
+                        <img src="/services/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                     </a>
+
                     <a
                         href="https://www.facebook.com/profile.php?id=61567821947508"
                         aria-label="Facebook"
-                        className="border border-[#55555570] bg-white rounded p-3 w-fit hover:bg-gray-100"
+                        className="border border-[#55555570] bg-white rounded p-3 hover:bg-gray-100 w-14 h-14 flex items-center justify-center"
                     >
-                        <img
-                            src="/services/facebook.png"
-                            className="w-8 h-8 object-cover"
-                            alt="Facebook"
-                        />
+                        <img src="/services/facebook.png" alt="Facebook" className="w-8 h-8 object-cover" />
                     </a>
+
                     <a
                         href="https://www.instagram.com/kriyonainfotech/"
                         aria-label="Instagram"
-                        className="border border-[#55555570] bg-white rounded p-3 w-fit hover:bg-gray-100"
+                        className="border border-[#55555570] bg-white rounded p-3 hover:bg-gray-100 w-14 h-14 flex items-center justify-center"
                     >
-                        <img
-                            src="/services/instagram.png"
-                            className="w-8 h-8"
-                            alt="Instagram"
-                        />
+                        <img src="/services/instagram.png" alt="Instagram" className="w-8 h-8" />
                     </a>
+
                     <a
                         href="https://clutch.co/profile/kriyona-infotech#highlights"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Clutch"
-                        className="border border-[#55555570] bg-white rounded p-3 w-fit hover:bg-gray-100"
+                        className="border border-[#55555570] bg-white rounded p-3 hover:bg-gray-100 w-14 h-14 flex items-center justify-center"
                     >
-                        <img src="/services/clutch.webp" className="w-8 h-8" alt="Clutch" />
+                        <img src="/services/clutch.webp" alt="Clutch" className="w-8 h-8" />
                     </a>
                 </div>
+
+
+
 
                 {/* Copyright */}
                 <div className="mt-14">

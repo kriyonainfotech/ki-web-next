@@ -97,7 +97,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="py-10 sm:py-20 md:py-24">
-                        <div className="mt-0 mt-12 mx-auto border border-black-border pt-16">
+                        <div className="mt-12 mx-auto border border-black-border pt-16">
                             <p className="text-md font-semibold text-center text-capilatize text-gray-600 opacity-80 mb-1">
                                 who we are
                             </p>
@@ -330,8 +330,8 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1">
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0">
-                                        <div className="border border-black-border py-5 border-r-0">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0">
+                                        <div className="border border-black-border py-8 border-r-0">
                                             <a target="_blank">
                                                 <img
                                                     alt="Vercel"
@@ -344,7 +344,7 @@ export default function Home() {
                                                 />
                                             </a>
                                         </div>
-                                        <div className="border border-black-border py-5 border-r-0">
+                                        <div className="border border-black-border py-8 border-r-0">
                                             <a target="_blank">
                                                 <img
                                                     alt="Tinybird"
@@ -357,7 +357,7 @@ export default function Home() {
                                                 />
                                             </a>
                                         </div>
-                                        <div className="border border-black-border py-5 border-r-0">
+                                        <div className="border border-black-border py-8 border-r-0">
                                             <a target="_blank">
                                                 <img
                                                     alt="Clerk"
@@ -370,20 +370,7 @@ export default function Home() {
                                                 />
                                             </a>
                                         </div>
-                                        <div className="border border-black-border py-5 border-r-0">
-                                            <a target="_blank">
-                                                <img
-                                                    alt="Hashnode"
-                                                    loading="lazy"
-                                                    width={80}
-                                                    height="auto"
-                                                    decoding="async"
-                                                    className="mx-auto"
-                                                    src="/saraa-trends-bg_chr16j.png"
-                                                />
-                                            </a>
-                                        </div>
-                                        <div className="border border-black-border py-5 border-r-0">
+                                        <div className="border border-black-border py-8 border-r-0">
                                             <a target="_blank">
                                                 <img
                                                     alt="Perplexity"

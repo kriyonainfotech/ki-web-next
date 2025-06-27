@@ -1,0 +1,48 @@
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 100px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons a {
+    width: 56px;
+    height: 56px;
+    background: white;
+    border: 1px solid #55555570;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.social-icons a:hover {
+    background-color: #f1f1f1;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.center-on-mobile {
+    grid-column: 2;
+    /* force Instagram to center in 2nd row */
+}
+
+@media screen and (min-width: 1024px) {
+    .social-icons {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 600px;
+    }
+
+    .center-on-mobile {
+        grid-column: auto;
+    }
+}

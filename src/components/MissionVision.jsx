@@ -25,8 +25,7 @@ export default function MissionVision() {
                                 <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] to-[#FD98FF]">Our Mission</h4>
                             </div>
                             <p className="text-gray-800 leading-relaxed">
-                                To provide high-quality digital and technology solutions tailored to business needs. At Kriyona Infotech, client satisfaction drives every line of code, every strategy, and every launch.
-                            </p>
+                                Our mission is to help businesses grow through technology — by delivering high-quality websites, applications, and custom software that solve real problems. We are committed to consistent innovation, client satisfaction, and long-term success through reliable, results-driven solutions.                            </p>
                         </div>
                     </div>
 
@@ -43,8 +42,7 @@ export default function MissionVision() {
                                 <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] to-[#FD98FF]">Our Vision</h4>
                             </div>
                             <p className="text-gray-800 leading-relaxed">
-                                To be a trusted technology partner for businesses in India and around the world — delivering scalable, efficient, and future-ready web, app, and software solutions.
-                            </p>
+                                Our vision is to be recognized among the top 10 technology service providers in India — known for delivering reliable, scalable, and future-ready digital solutions that empower businesses across industries.                            </p>
                         </div>
                     </div>
                 </div>

@@ -218,7 +218,7 @@ export default function PricingClient() {
                             className="border border-black-border rounded-lg p-8 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                         >
                             <h3
-                                className="text-2xl font-extrabold mb-5 bg-gradient-to-b from-purple-700 to-pink-600 bg-clip-text text-transparent"
+                                className="text-2xl font-extrabold mb-5 bg-gradient-to-r from-[#FFC487] to-[#FD98FF] bg-clip-text text-transparent"
                                 style={{ lineHeight: "1.2" }}
                             >
                                 {title}
@@ -235,7 +235,7 @@ export default function PricingClient() {
                                 <a
                                     href={pdfLink}
                                     download
-                                    className="inline-block px-6 py-3 rounded-full font-medium text-gray-900 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm  transition-all duration-300 bg-[length:300%] bg-left hover:bg-right"
+                                    className="inline-block px-6 py-3 rounded-full font-medium border border-black-border text-gray-900 bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% "
                                 >
                                     Download Pricing Guide
                                 </a>
@@ -248,7 +248,7 @@ export default function PricingClient() {
                 {/* Value Section */}
                 <div className="mt-20 py-20 px-6 md:px-12 border border-[#55555580] text-center">
                     <h2 className="text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
-                        Why Our Pricing Works
+                        Why Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] to-[#FD98FF] "> Pricing </span>Works
                     </h2>
                     <p className="text-gray-600 max-w-xl mx-auto mb-12">
                         Transparent, flexible, and built to deliver real value — no fluff, just results.
@@ -273,7 +273,7 @@ export default function PricingClient() {
                             }
                         ].map((item, index) => (
                             <div key={index} className="p-6 bg-gradient-to-br from-white via-[#f7f7ff] to-[#f2f2fa] shadow-lg hover:shadow-md transition-shadow duration-300">
-                                <div className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#efc495] via-[#8f0f91] to-[#644c9c] mb-4">
+                                <div className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FFC487] to-[#FD98FF]  mb-4">
                                     {item.icon}
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>

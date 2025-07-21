@@ -1,5 +1,6 @@
 
 'use client' // Only if you're in App Router (`app/` folder) and using state
+import MissionVision from '@/components/MissionVision';
 import React, { useState } from 'react';
 
 export default function AboutClient() {
@@ -88,6 +89,9 @@ export default function AboutClient() {
 
                     </section>
                 </div>
+
+                <MissionVision />
+
                 <section className="border border-black-border mt-20 px-5">
                     <h3 className="text-2xl md:text-3xl lg:text-4xl w-auto xl:w-4/6 text-center text-primary-black font-bold my-10 mx-auto">
                         Frequently Asked Questions About Kriyona Infotech's Services

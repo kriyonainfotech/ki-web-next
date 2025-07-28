@@ -330,7 +330,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1">
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0">
                                         <div className="border border-black-border py-8 border-r-0">
                                             <a target="_blank">
                                                 <img
@@ -349,11 +349,11 @@ export default function Home() {
                                                 <img
                                                     alt="Tinybird"
                                                     loading="lazy"
-                                                    width={110}
+                                                    width={220}
                                                     height="auto"
                                                     decoding="async"
                                                     className="mx-auto"
-                                                    src="/Zippyzestpng.png"
+                                                    src="/marron_icon.png"
                                                 />
                                             </a>
                                         </div>
@@ -380,6 +380,19 @@ export default function Home() {
                                                     decoding="async"
                                                     className="mx-auto"
                                                     src="/eibmlogo.png"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div className="border border-black-border py-8 border-r-0">
+                                            <a target="_blank">
+                                                <img
+                                                    alt="Perplexity"
+                                                    loading="lazy"
+                                                    width={90}
+                                                    height="auto"
+                                                    decoding="async"
+                                                    className="mx-auto"
+                                                    src="/crebit.png"
                                                 />
                                             </a>
                                         </div>

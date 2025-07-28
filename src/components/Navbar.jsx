@@ -47,7 +47,7 @@ export default function Navbar() {
                         <div className="py-4 px-5 border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
                             <Link href="/">
                                 <Image
-                                    src="https://res.cloudinary.com/dd6vjyu3c/image/upload/q_auto,f_auto/v1742367088/kriyona-infotech-logo_wwjnhz.png"
+                                    src="/logo/Group 1597877882.png"
                                     className="w-auto h-8"
                                     alt="Kriyona Infotech Logo" width={200} height={100}
                                 />

@@ -69,7 +69,7 @@ export default function ContactUsClient() {
                             <strong>Phone:</strong> +91 84013 66742
                         </li>
                         <li className="text-[#555555]">
-                            <strong>Address:</strong> 3rd floor, 51-52 Pramukh park society,
+                            <strong>Address:</strong> 51-52, 3rd floor, Pramukh park society,
                             Mahadev chowk, Mota Varachha, Surat, Gujarat 394101
                         </li>
                     </ul>

@@ -62,7 +62,7 @@ export default function Footer() {
                         </p>
                         <p className="mt-5">Address:</p>
                         <address className="not-italic text-gray-700 ">
-                            3rd floor, 51-52 Pramukh park society,
+                            51-52, 3rd floor, Pramukh park society,
                             <br />
                             Mahadev chowk, Mota Varachha, Surat, Gujarat 394101
                             <br />

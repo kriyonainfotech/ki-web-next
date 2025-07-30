@@ -24,5 +24,5 @@ export default function DisableInspect() {
         };
     }, []);
 
-    return null; // no UI
+    return null;
 }

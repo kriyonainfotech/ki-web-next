@@ -44,11 +44,11 @@ export default function Navbar() {
             >
                 <div className="px-5 lg:px-24 2xl:px-40 py-5">
                     <div className="flex items-center">
-                        <div className="py-2 px-5 border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
+                        <div className="py-3 px-5 border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
                             <Link href="/">
                                 <Image
                                     src="/logo/Group 1597877883.svg"
-                                    className="w-auto h-12"
+                                    className="w-auto h-10"
                                     alt="Kriyona Infotech Logo" width={200} height={100}
                                 />
                             </Link>

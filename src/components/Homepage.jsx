@@ -1,6 +1,11 @@
+'use client';
+
 import Image from "next/image";
 import Technologies from '@/components/Technologies'
 import Head from "next/head";
+import Hero from "./HeroSection";
+import WaveStrapHero from "./HeroSection";
+import FuturisticHero from "./HeroSection";
 
 export default function Home() {
 
@@ -22,6 +27,9 @@ export default function Home() {
 
             <main className="h-auto">
                 <div className="px-5 sm:px-10 lg:px-24 2xl:px-40">
+{/* 
+<FuturisticHero /> */}
+
                     <div className="bg-hero-grid h-auto mt-5">
                         <div className="text-center flex flex-col justify-center">
                             <div className=" border border-[#55555580] py-16 sm:py-20 md:py-32 text-center px-2 lg:px-20">
@@ -96,6 +104,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="py-10 sm:py-20 md:py-24">
                         <div className="mt-12 mx-auto border border-black-border pt-16">
                             <p className="text-md font-semibold text-center text-capilatize text-gray-600 opacity-80 mb-1">
@@ -104,7 +113,7 @@ export default function Home() {
                             <h2 className="text-3xl font-bold tracking-wide text-center">
                                 KRIYONA INFOTECH
                             </h2>
-                            <p className="text-[#666666] text-center my-8 w-full sm:w-3/4 lg:w-2/3 xl:w-3/6 mx-auto">
+                            <p className="text-[#666666] text-center my-8 w-full sm:w-3/4 lg:w-2/3 xl:w-3/6 mx-auto px-5">
                                 "Kriyona Infotech is a leading IT company in Surat, India offering custom website development, mobile app solutions, UI/UX design, SEO, and digital marketing.We empower startups and enterprises with scalable, high-performance digital solutions that drive real business results."
                             </p>
                             <div className="grid grid-cols-3 border-t border-black-border">
@@ -249,8 +258,6 @@ export default function Home() {
               </div>
             </div>dfdfdf
           </div> */}
-
-                    {/* portfolio  */}
 
                     <div className="bg-pink">
                         <div className="py-10 sm:py-5">

@@ -1,6 +1,8 @@
+'use client';
 import Link from 'next/link';
 import services from '@/data/services';
-
+import React from "react";
+import { motion } from "framer-motion";
 export default function ServicesClient() {
     return (
         <>
@@ -75,7 +77,7 @@ export default function ServicesClient() {
 
                                         <Link
                                             href={service.link}
-                                            className="inline-block px-6 py-3 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm rounded-full transition-colors duration-300 font-medium hover:no-underline"
+                                            className="inline px-6 py-3 bg-white border border-gray-300 hover:shadow-xl rounded-full transition-colors duration-300 font-medium hover:no-underline"
                                             aria-label={`Learn more about ${service.name}`}
                                         >
                                             Explore Solutions
@@ -88,23 +90,43 @@ export default function ServicesClient() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="cta-section py-20 text-center">
-                    <div className="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 backdrop-blur-sm rounded-2xl p-12 shadow-xl">
-                        <h2 className="text-4xl font-bold text-white mb-6">
+                 <section className="w-full flex justify-center  pt-20 pb-5">
+            <div className="w-full max-w-full mx-40 bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% backdrop-blur-sm  py-16 px-8 relative overflow-hidden shadow-lg">
+                <div className="container mx-auto px-6 text-center">
+                    <motion.h2
+                        className="text-3xl sm:text-4xl font-bold mb-7"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                    >
                             Ready to Revolutionize Your Tech Stack?
-                        </h2>
-                        <p className="text-md text-gray-900 mb-8 max-w-2xl mx-auto">
-                            Let's build something extraordinary together. Schedule a free tech
+                    </motion.h2>
+
+                    <motion.p
+                        className="text-gray-600 max-w-2xl mx-auto mb-10 px-4"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                        viewport={{ once: true }}
+                    >
+                        Let's build something extraordinary together. Schedule a free tech
                             consultation today.
-                        </p>
-                        <Link
-                            href="/contactus"
-                            className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-colors duration-300 transform hover:scale-105"
-                        >
+                    </motion.p>
+
+                    <motion.a
+                        href="tel:+918401366742"
+                        className="inline-flex items-center gap-2 bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-xl transition"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.4 }}
+                        viewport={{ once: true }}
+                    >
                             Start Your Project Now
-                        </Link>
-                    </div>
-                </section>
+                    </motion.a>
+                </div>
+            </div>
+        </section>
             </div>
         </>
     )

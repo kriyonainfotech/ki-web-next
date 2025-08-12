@@ -83,49 +83,49 @@ const services = [
             },
         ],
     },
-    {
-        id: 4,
-        name: "UI/UX DESIGN",
-        link: "/services/ui-ux-design",
+    // {
+    //     id: 4,
+    //     name: "UI/UX DESIGN",
+    //     link: "/services/ui-ux-design",
 
-        text: " Our UI design focuses on creating visually appealing and emotionally comfortable experiences, ensuring that users connect with your product in a meaningful and intuitive way.",
-        list: [
-            {
-                id: 1,
-                li: "Interface Design",
-            },
-            {
-                id: 2,
-                li: "Interaction Design",
-            },
-            {
-                id: 3,
-                li: "Research",
-            },
-            {
-                id: 4,
-                li: "Prototyping",
-            },
-        ],
-        icons: [
-            {
-                id: 1,
-                img: "/ve/photoshop.png",
-            },
-            {
-                id: 2,
-                img: "/services/Xd.png",
-            },
-            {
-                id: 3,
-                img: "/ve/illustrator.png",
-            },
-            {
-                id: 4,
-                img: "/appdev/figma.png",
-            },
-        ],
-    },
+    //     text: " Our UI design focuses on creating visually appealing and emotionally comfortable experiences, ensuring that users connect with your product in a meaningful and intuitive way.",
+    //     list: [
+    //         {
+    //             id: 1,
+    //             li: "Interface Design",
+    //         },
+    //         {
+    //             id: 2,
+    //             li: "Interaction Design",
+    //         },
+    //         {
+    //             id: 3,
+    //             li: "Research",
+    //         },
+    //         {
+    //             id: 4,
+    //             li: "Prototyping",
+    //         },
+    //     ],
+    //     icons: [
+    //         {
+    //             id: 1,
+    //             img: "/ve/photoshop.png",
+    //         },
+    //         {
+    //             id: 2,
+    //             img: "/services/Xd.png",
+    //         },
+    //         {
+    //             id: 3,
+    //             img: "/ve/illustrator.png",
+    //         },
+    //         {
+    //             id: 4,
+    //             img: "/appdev/figma.png",
+    //         },
+    //     ],
+    // },
     {
         id: 5,
         name: "SEO SERVICES",
@@ -169,56 +169,56 @@ const services = [
             },
         ],
     },
-    {
-        id: 5,
-        link: "/services/video-editing",
-        name: "Video Editing & Graphics",
-        text: "We also provide professional video editing services, specializing in creating dynamic and engaging content such as reels, animations, and promotional videos. Using tools like After Effects, we bring your ideas to life with visually stunning edits that capture attention and resonate with your audience.",
-        list: [
-            {
-                id: 1,
-                li: "Premiere Pro",
-            },
-            {
-                id: 2,
-                li: "Davinci Resolve",
-            },
-            {
-                id: 3,
-                li: "After Effects",
-            },
-            {
-                id: 4,
-                li: "Illustrator",
-            },
-            {
-                id: 5,
-                li: "Photoshop",
-            },
-        ],
-        icons: [
-            {
-                id: 1,
-                img: "/ve/premiere.png",
-            },
-            {
-                id: 2,
-                img: "/ve/davinci.png",
-            },
-            {
-                id: 3,
-                img: "/ve/after.png",
-            },
-            {
-                id: 4,
-                img: "/ve/illustrator.png",
-            },
-            {
-                id: 4,
-                img: "/ve/photoshop.png",
-            },
-        ],
-    },
+    // {
+    //     id: 5,
+    //     link: "/services/video-editing",
+    //     name: "Video Editing & Graphics",
+    //     text: "We also provide professional video editing services, specializing in creating dynamic and engaging content such as reels, animations, and promotional videos. Using tools like After Effects, we bring your ideas to life with visually stunning edits that capture attention and resonate with your audience.",
+    //     list: [
+    //         {
+    //             id: 1,
+    //             li: "Premiere Pro",
+    //         },
+    //         {
+    //             id: 2,
+    //             li: "Davinci Resolve",
+    //         },
+    //         {
+    //             id: 3,
+    //             li: "After Effects",
+    //         },
+    //         {
+    //             id: 4,
+    //             li: "Illustrator",
+    //         },
+    //         {
+    //             id: 5,
+    //             li: "Photoshop",
+    //         },
+    //     ],
+    //     icons: [
+    //         {
+    //             id: 1,
+    //             img: "/ve/premiere.png",
+    //         },
+    //         {
+    //             id: 2,
+    //             img: "/ve/davinci.png",
+    //         },
+    //         {
+    //             id: 3,
+    //             img: "/ve/after.png",
+    //         },
+    //         {
+    //             id: 4,
+    //             img: "/ve/illustrator.png",
+    //         },
+    //         {
+    //             id: 4,
+    //             img: "/ve/photoshop.png",
+    //         },
+    //     ],
+    // },
     {
         id: 6,
         link: "/services/digital-marketing",

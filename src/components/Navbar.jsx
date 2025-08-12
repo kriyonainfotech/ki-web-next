@@ -44,7 +44,7 @@ export default function Navbar() {
             >
                 <div className="px-5 lg:px-24 2xl:px-40 py-5">
                     <div className="flex items-center">
-                        <div className="py-3 px-5 border border-black-border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
+                        <div className="py-3 px-5 border border-[#55555580] bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100%">
                             <Link href="/">
                                 <Image
                                     src="/logo/Group 1597877883.svg"
@@ -57,9 +57,9 @@ export default function Navbar() {
                         {/* Desktop Navigation */}
                         <div className="hidden lg:inline-flex w-full">
                             <nav className="w-full">
-                                <ul className="grid grid-cols-7 w-full">
+                                <ul className="grid grid-cols-6 w-full">
                                     <li
-                                        className={`border border-black-border py-5 text-center ${pathname === '/about' ? activeTabStyle : ''}`}
+                                        className={`border border-[#55555580] py-5 text-center ${pathname === '/about' ? activeTabStyle : ''}`}
                                         onClick={() => handleTabClick('/about')}
                                     >
                                         <Link href="/about">About</Link>
@@ -67,19 +67,19 @@ export default function Navbar() {
 
                                     {/* Services with Dropdown */}
                                     <li
-                                        className={`relative border border-black-border py-5 text-center cursor-pointer ${pathname.startsWith('/services') ? activeTabStyle : ''
+                                        className={`relative border border-[#55555580] py-5 text-center cursor-pointer ${pathname.startsWith('/services') ? activeTabStyle : ''
                                             }`}
                                     >
                                         <div className="flex items-center justify-center">
                                             <Link href="/services">Services</Link>
-                                            <FaAngleDoubleDown
+                                            {/* <FaAngleDoubleDown
                                                 className="w-4 h-3 bg-gray-200 ms-1 mt-1"
-                                                onClick={() => setServicesOpen(!servicesOpen)}
-                                            />
+                                                // onClick={() => setServicesOpen(!servicesOpen)}
+                                            /> */}
                                         </div>
 
                                         {servicesOpen && (
-                                            <ul className="absolute top-full left-0 bg-gray-50 border border-black-border w-52 shadow-md text-left z-50">
+                                            <ul className="absolute top-full left-0 bg-gray-50 border border-[#55555580] w-52 shadow-md text-left z-50">
                                                 {servicePages.map((service) => (
                                                     <li key={service.label} className="px-4 py-2 hover:bg-gray-100">
                                                         <Link href={service.path}>{service.label}</Link>
@@ -93,13 +93,13 @@ export default function Navbar() {
                                     {[
                                         { label: 'OurProcess', path: '/ourprocess' },
                                         { label: 'Portfolio', path: '/portfolio' },
-                                        { label: 'Pricing', path: '/pricing' },
+                                        // { label: 'Pricing', path: '/pricing' },
                                         { label: 'Blog', path: '/blog' },
                                         { label: 'ContactUs', path: '/contactus' },
                                     ].map((tab) => (
                                         <li
                                             key={tab.label}
-                                            className={`border border-black-border py-5 text-center ${pathname === tab.path ? activeTabStyle : ''
+                                            className={`border border-[#55555580] py-5 text-center ${pathname === tab.path ? activeTabStyle : ''
                                                 }`}
                                             onClick={() => handleTabClick(tab.path)}
                                         >
@@ -113,7 +113,7 @@ export default function Navbar() {
                         {/* Mobile Menu Button */}
                         <div className="lg:hidden ms-auto">
                             <button
-                                className="border border-black-border rounded p-2 w-fit"
+                                className="border border-[#55555580] rounded p-2 w-fit"
                                 onClick={toggleMenu}
                             >
                                 <svg
@@ -146,7 +146,7 @@ export default function Navbar() {
                                     ]].map((tab) => (
                                         <li
                                             key={tab.label}
-                                            className={`border border-black-border py-2 px-4 text-center ${pathname === tab.path ? activeTabStyle : ''
+                                            className={`border border-[#55555580] py-2 px-4 text-center ${pathname === tab.path ? activeTabStyle : ''
                                                 }`}
                                             onClick={() => {
                                                 handleTabClick(tab.path);

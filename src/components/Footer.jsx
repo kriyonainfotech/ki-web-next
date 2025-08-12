@@ -42,7 +42,7 @@ export default function Footer() {
 
                         sizes to deliver ambitious digital projects.
                     </p>
-                    <div className="bg-white mt-14 border border-[#55555550] w-fit mx-auto py-4 px-7 rounded underline">
+                    <div className="bg-white mt-14 border border-[#55555550] w-fit mx-auto py-4 px-7 rounded-full underline">
                         <a
                             href="mailto:kriyonainfotech@gmail.com"
                             className="text-primary-black"
@@ -114,14 +114,14 @@ export default function Footer() {
                                     Portfolio
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link
                                     href="/pricing"
                                     className="text-gray-700 hover:text-primary-black"
                                 >
                                     Pricing
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link
                                     href="/blog"

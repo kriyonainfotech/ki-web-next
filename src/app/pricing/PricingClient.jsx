@@ -197,7 +197,7 @@ export default function PricingClient() {
             <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 my-20">
                 {/* Hero Section */}
                 <div className="bg-hero-grid mt-5">
-                    <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-20 md:py-28">
+                    <div className="text-center sm:px-10 md:px-20 lg:px-0 xl:px-10 border border-[#55555580] py-20 md:py-28">
                         <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
                             Straightforward Pricing for Digital Excellence
                         </h1>
@@ -215,7 +215,7 @@ export default function PricingClient() {
                     {pricingServices.map(({ title, features, pdfLink }) => (
                         <div
                             key={title}
-                            className="border border-black-border rounded-lg p-8 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
+                            className="border border-[#55555580] rounded-lg p-8 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                         >
                             <h3
                                 className="text-2xl font-extrabold mb-5 bg-gradient-to-r from-[#FFC487] to-[#FD98FF] bg-clip-text text-transparent"
@@ -235,7 +235,7 @@ export default function PricingClient() {
                                 <a
                                     href={pdfLink}
                                     download
-                                    className="inline-block px-6 py-3 rounded-full font-medium border border-black-border text-gray-900 bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% "
+                                    className="inline-block px-6 py-3 rounded-full font-medium border border-[#55555580] text-gray-900 bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% "
                                 >
                                     Download Pricing Guide
                                 </a>

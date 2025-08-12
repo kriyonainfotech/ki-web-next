@@ -49,7 +49,7 @@
 
 //     return (
 // <div className="bg-pink">
-//     <div className="text-center xxs:mt-24 sm:mt-36 border border-black-border border-opacity-40">
+//     <div className="text-center xxs:mt-24 sm:mt-36 border border-[#55555580] border-opacity-40">
 //         <div className="xxs:text-4xl sm:text-5xl xl:text-6xl font-bold text-primary-black py-20">
 //             <h1>Technologies We Utilise</h1>
 //         </div>
@@ -57,7 +57,7 @@
 //             {Object.keys(categories).map((category) => (
 //                 <p
 //                     key={category}
-//                     className={`p-3 text-center cursor-pointer border border-black-border border-opacity-40 ${activeCategory === category ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" : ""
+//                     className={`p-3 text-center cursor-pointer border border-[#55555580] border-opacity-40 ${activeCategory === category ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" : ""
 //                         }`}
 //                     onClick={() => setActiveCategory(category)}
 //                 >
@@ -67,7 +67,7 @@
 //         </div>
 //         <div className="grid xxs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-0">
 //             {currentCategory.map((tech) => (
-//                 <div key={tech.name} className="border border-black-border border-opacity-0 xxs:p-5 sm:p-7">
+//                 <div key={tech.name} className="border border-[#55555580] border-opacity-0 xxs:p-5 sm:p-7">
 //                     <a href={tech.link} target="_blank" rel="noopener noreferrer">
 //                         <Image
 //                             alt={tech.name}
@@ -88,7 +88,7 @@
 "use client";
 import Image from 'next/image';
 import { useState } from 'react';
-
+import { motion } from 'framer-motion';
 export default function Technologies() {
 
     const [activeCategory, setActiveCategory] = useState("Frontend");
@@ -144,7 +144,7 @@ export default function Technologies() {
 
     return (
         <div className="bg-pink mt-20">
-            <div className="text-center xxs:mt-24 sm:mt-36 border border-black-border border-opacity-40">
+            <div className="text-center xxs:mt-24 sm:mt-36 border border-[#55555580] border-opacity-40">
                 <div className="text-3xl sm:text-5xl xl:text-6xl font-bold text-primary-black lg:pt-25 py-15">
                     <h1>Technologies We Utilise</h1>
                 </div>
@@ -152,7 +152,7 @@ export default function Technologies() {
                 {/* 📱 Mobile View – Accordion */}
                 <div className="block sm:hidden w-full max-w-3xl mx-auto px-4">
                     {Object.entries(categories).map(([category, techList]) => (
-                        <div key={category} className="mb-4 border border-black-border border-opacity-20">
+                        <div key={category} className="mb-4 border border-[#55555580] border-opacity-20">
                             <div
                                 className={`flex justify-between items-center p-4 cursor-pointer 
                       ${openCategory === category ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" : "bg-white"}`}
@@ -164,7 +164,7 @@ export default function Technologies() {
                             {openCategory === category && (
                                 <div className="grid grid-cols-3 gap-3 p-4 transition-all duration-300 ease-in-out">
                                     {techList.map((tech) => (
-                                        <div key={tech.name} className="border border-black-border border-opacity-10 p-3 rounded bg-white shadow-sm">
+                                        <div key={tech.name} className="border border-[#55555580] border-opacity-10 p-3 rounded bg-white shadow-sm">
                                             <a href={tech.link} target="_blank" rel="noopener noreferrer">
                                                 <Image
                                                     alt={tech.name}
@@ -183,39 +183,69 @@ export default function Technologies() {
                 </div>
 
                 {/* 💻 Desktop View – Grid UI */}
-                <div className="hidden sm:block">
-                    <div className="bg-pink">
-                        <div className="text-center xxs:mt-24 sm:mt-36 border border-black-border border-opacity-40">
-                            <div className="grid xxs:grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 xl:grid-cols-6">
-                                {Object.keys(categories).map((category) => (
-                                    <p
-                                        key={category}
-                                        className={`p-3 text-center cursor-pointer border border-black-border border-opacity-40 ${activeCategory === category ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" : ""
-                                            }`}
-                                        onClick={() => setActiveCategory(category)}
-                                    >
-                                        {category}
-                                    </p>
-                                ))}
-                            </div>
-                            <div className="grid xxs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-0">
-                                {currentCategory.map((tech) => (
-                                    <div key={tech.name} className="border border-black-border border-opacity-0 xxs:p-5 sm:p-7">
-                                        <a href={tech.link} target="_blank" rel="noopener noreferrer">
-                                            <Image
-                                                alt={tech.name}
-                                                loading="lazy"
-                                                className="xxs:w-12 xxs:h-10 object-cover mx-auto"
-                                                src={tech.img}
-                                                width={100} height={50}
-                                            />
-                                        </a>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               {/* 💻 Desktop View - Clean Border Structure */}
+<div className="hidden sm:block">
+  <div className="bg-pink">
+    {/* Outer container with full border */}
+    <div className="border border-[#55555580]">
+      
+      {/* Category tabs - single row with bottom border only */}
+      <div className="flex border-b border-[#55555580]">
+        {Object.keys(categories).map((category) => (
+          <motion.button
+            key={category}
+            className={`
+              flex-1 p-4 text-center 
+              border-r border-[#55555580] last:border-r-0
+              ${activeCategory === category 
+                ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" 
+                : "hover:bg-gray-50/50"
+              }
+            `}
+            onClick={() => setActiveCategory(category)}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            {category}
+          </motion.button>
+        ))}
+      </div>
+
+      {/* Tech grid - clean internal borders */}
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+        {currentCategory.map((tech, index) => {
+          // Calculate border classes
+          const showRightBorder = (index + 1) % 6 !== 0; // No right border on last column
+          const showBottomBorder = index < currentCategory.length - (currentCategory.length % 6 || 6); // No bottom border on last row
+          
+          return (
+            <motion.div 
+              key={tech.name}
+              className={`
+                p-6 flex justify-center items-center
+                ${showRightBorder ? 'border-r border-[#55555580]' : ''}
+                ${showBottomBorder ? 'border-b border-[#55555580]' : ''}
+                hover:bg-white/50 transition-colors
+              `}
+              whileHover={{ scale: 1.05 }}
+            >
+              <a href={tech.link} target="_blank" rel="noopener noreferrer">
+                <Image
+                  alt={tech.name}
+                  loading="lazy"
+                  className="w-12 h-10 sm:w-16 sm:h-12 object-contain"
+                  src={tech.img}
+                  width={100}
+                  height={50}
+                />
+              </a>
+            </motion.div>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</div>
             </div>
         </div>
     );

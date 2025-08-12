@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function MissionVision() {
     return (
         <>
-            <section className="mt-20 border border-black-border py-16 px-5 sm:px-10">
+            <section className="mt-20 border border-[#55555580] py-16 px-5 sm:px-10">
                 <div className="text-center mb-16">
                     <h2 className="text-lg ">Our Purpose</h2>
                     <h3 className="text-2xl md:text-3xl lg:text-4xl text-primary-black font-bold mt-2">
@@ -48,7 +48,7 @@ export default function MissionVision() {
                 </div>
             </section>
 
-            <section className="mt-20 border border-black-border py-16 px-5 sm:px-10">
+            <section className="mt-20 border border-[#55555580] py-16 px-5 sm:px-10">
                 <div className="text-center mb-16">
                     <h2 className="text-lg ">Our Foundation</h2>
                     <h3 className="text-2xl md:text-3xl lg:text-4xl text-primary-black font-bold mt-2">

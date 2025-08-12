@@ -50,7 +50,7 @@ export default function AboutClient() {
 
             <div className="px-5 sm:px-5 lg:px-24 2xl:px-40">
                 <div className="bg-hero-grid mt-5 ">
-                    <div className="text-center px-10 md:px-20 lg:px-0 xl:px-10 border border-black-border py-20 xl:py-36">
+                    <div className="text-center px-10 md:px-20 lg:px-0 xl:px-10 border border-[#55555580] py-20 xl:py-36">
                         <h1
                             className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto"
 
@@ -64,7 +64,7 @@ export default function AboutClient() {
                     </div>
                 </div>
                 <div
-                    className="mt-20 border border-black-border"
+                    className="mt-20 border border-[#55555580]"
                 >
                     <section className="text-center py-20">
                         <h2 className='text-lg '>About Us</h2>
@@ -92,7 +92,7 @@ export default function AboutClient() {
 
                 <MissionVision />
 
-                <section className="border border-black-border mt-20 px-5">
+                <section className="border border-[#55555580] mt-20 px-5">
                     <h3 className="text-2xl md:text-3xl lg:text-4xl w-auto xl:w-4/6 text-center text-primary-black font-bold my-10 mx-auto">
                         Frequently Asked Questions About Kriyona Infotech's Services
                     </h3>

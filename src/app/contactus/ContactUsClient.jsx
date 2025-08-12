@@ -172,7 +172,7 @@ export default function ContactUsClient() {
                                 <button
                                     type="submit"
                                     disabled={status === "loading"}
-                                    className="w-full py-3 text-gray-900 border border-black-border rounded bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]"
+                                    className="w-full py-3 text-gray-900 border border-[#55555580] rounded bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]"
                                 >
                                     {status === "loading" ? "Sending..." : "Submit"}
                                 </button>

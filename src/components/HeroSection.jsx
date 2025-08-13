@@ -1,184 +1,172 @@
-import { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
-const ParticleMatrix = () => {
-  const canvasRef = useRef(null);
-  const particles = useRef([]);
-  const mouse = useRef({ x: null, y: null, radius: 100 });
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-
-    // Initialize particles
-    particles.current = Array.from({ length: 150 }).map(() => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: Math.random() * 3 + 1,
-      baseX: Math.random() * canvas.width,
-      baseY: Math.random() * canvas.height,
-      density: Math.random() * 30 + 1,
-      color: `hsl(${Math.random() * 60 + 190}, 80%, 60%)` // Blue/cyan spectrum
-    }));
-
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw connections
-      for (let i = 0; i < particles.current.length; i++) {
-        for (let j = i; j < particles.current.length; j++) {
-          const dx = particles.current[i].x - particles.current[j].x;
-          const dy = particles.current[i].y - particles.current[j].y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          
-          if (distance < 100) {
-            ctx.strokeStyle = `rgba(100, 200, 255, ${1 - distance/100})`;
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.moveTo(particles.current[i].x, particles.current[i].y);
-            ctx.lineTo(particles.current[j].x, particles.current[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-
-      // Draw particles
-      particles.current.forEach(p => {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.fill();
-
-        // Mouse interaction
-        const dx = mouse.current.x - p.x;
-        const dy = mouse.current.y - p.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        if (distance < mouse.current.radius) {
-          const forceDirectionX = dx / distance;
-          const forceDirectionY = dy / distance;
-          const force = (mouse.current.radius - distance) / mouse.current.radius;
-          const directionX = forceDirectionX * force * p.density;
-          const directionY = forceDirectionY * force * p.density;
-          
-          p.x -= directionX;
-          p.y -= directionY;
-        } else {
-          if (p.x !== p.baseX) {
-            const dx = p.baseX - p.x;
-            p.x += dx / 20;
-          }
-          if (p.y !== p.baseY) {
-            const dy = p.baseY - p.y;
-            p.y += dy / 20;
-          }
-        }
-      });
-
-      requestAnimationFrame(animate);
-    };
-
-    const handleResize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-    };
-
-    const handleMouseMove = (e) => {
-      mouse.current.x = e.clientX;
-      mouse.current.y = e.clientY;
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('resize', handleResize);
-    animate();
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+const HeroSection = () => {
+  const containerRef = useRef(null);
+  const features = [
+    { label: "Custom Websites", link: "/services/web-development" },
+    {
+      label: "Digital Business Solution",
+      link: "/services/digital-marketing",
+    },
+    { label: "Portfolio", link: "/portfolio" },
+  ];
 
   return (
-    <canvas 
-      ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none"
-    />
-  );
-};
+    <div
+      className="relative bg-white overflow-hidden shadow-sm border rounded-lg border-gray-200"
+      ref={containerRef}
+    >
+      {/* Animated Background Elements */}
+      <motion.div
+        className="absolute inset-0 bg-[radial-gradient(circle_at_center,#f0f0f0_1px,transparent_1px)] bg-[length:40px_40px]"
+        animate={{
+          backgroundPosition: ["0% 0%", "100% 100%"],
+          transition: {
+            duration: 30,
+            repeat: Infinity,
+            repeatType: "mirror",
+            ease: "linear",
+          },
+        }}
+      />
 
-export default function FuturisticHero() {
-  return (
-    <div className="relative h-screen w-full overflow-hidden bg-slate-950">
-      {/* Particle Matrix Background */}
-      <ParticleMatrix />
-      
-      {/* Glow overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_60%,rgba(8,145,178,0.1))]" />
-      
-      {/* Content */}
-      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 text-center">
+      {/* Floating Animated Elements */}
+      {[...Array(8)].map((_, i) => (
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          key={i}
+          className="absolute rounded-full bg-gray-100/50 backdrop-blur-sm"
+          style={{
+            width: `${Math.random() * 300 + 100}px`,
+            height: `${Math.random() * 300 + 100}px`,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+          }}
+          animate={{
+            x: [0, Math.random() * 200 - 100],
+            y: [0, Math.random() * 200 - 100],
+            rotate: [0, Math.random() * 360],
+            scale: [1, 1.2, 1],
+            transition: {
+              duration: Math.random() * 20 + 15,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            },
+          }}
+        />
+      ))}
+
+      {/* Content */}
+      <div className="relative z-10  px-5 sm:px-10 py-24 sm:py-32">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="backdrop-blur-sm bg-white/5 p-12 rounded-2xl border border-white/10"
+          transition={{ duration: 0.8, ease: "backOut" }}
+          className="text-center"
         >
-          <motion.h1 
-            className="text-5xl md:text-7xl font-bold text-white mb-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 1 }}
-          >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              Digital Alchemy
-            </span>
-          </motion.h1>
-          
-          <motion.p
-            className="text-xl text-white/80 mb-12 max-w-2xl mx-auto"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 1 }}
-          >
-            Transforming ideas into technological marvels through cutting-edge innovation
-          </motion.p>
-          
-          <motion.div
-            className="flex gap-4 justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9, duration: 1 }}
-          >
-            <button className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-medium hover:shadow-lg hover:shadow-cyan-500/30 transition-all">
-              Begin Transformation
-            </button>
-          </motion.div>
-        </motion.div>
-      </div>
-      
-      {/* Floating binary code animation */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{ y: -50, x: Math.random() * 100 }}
-            animate={{ 
-              y: `calc(100vh + 50px)`,
-              transition: {
-                duration: Math.random() * 20 + 10,
-                repeat: Infinity,
-                delay: Math.random() * 5
-              }
+          <motion.h1
+            className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.3 },
             }}
-            className="absolute text-xs text-cyan-400/30 font-mono"
-            style={{ left: `${Math.random() * 100}%` }}
           >
-            {Math.random().toString(2).substring(2, 15)}
-          </motion.div>
-        ))}
+            Bringing{" "}
+            <motion.span
+              className="text-indigo-600 inline-block"
+              // animate={{
+              //   rotate: [0, 5, -5, 0],
+              //   transition: {
+              //     duration: 8,
+              //     repeat: Infinity,
+              //     repeatType: "mirror",
+              //   },
+              // }}
+            >
+              Visions
+            </motion.span>{" "}
+            to Digital Life
+          </motion.h1>
+
+          <motion.p
+            className="text-lg text-gray-600 max-w-2xl mx-auto mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            Your trusted IT partner in India — delivering custom websites,
+            mobile apps, and digital solutions that drive real business growth.
+          </motion.p>
+        </motion.div>
+
+        {/* Features */}
+        <motion.div
+          className="flex flex-col sm:flex-row justify-center gap-6 max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, staggerChildren: 0.1 }}
+        >
+          {features.map((feature, index) => (
+            <motion.a
+              key={index}
+              href={feature.link}
+              className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 border border-gray-200"
+              whileHover={{
+                y: -8,
+                scale: 1.05,
+                boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1)",
+                backgroundColor: "rgba(59,130,246,0.1)",
+                borderColor: "rgba(59,130,246,0.3)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
+            >
+              <motion.div
+                animate={{
+                  rotate: [0, 10, -10, 0],
+                  transition: {
+                    duration: 4,
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                  },
+                }}
+                className="text-gray-500"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth={0}
+                  viewBox="0 0 16 16"
+                  className="text-xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"
+                  />
+                </svg>
+              </motion.div>
+              <motion.span
+                className="text-sm font-medium text-gray-700"
+                whileHover={{ color: "#3b82f6" }}
+              >
+                {feature.label}
+              </motion.span>
+            </motion.a>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;

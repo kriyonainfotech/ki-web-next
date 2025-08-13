@@ -1,34 +1,33 @@
-// app/components/PageTransitionWrapper.jsx
-'use client';
-
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import Loader from './Loader';
+"use client";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Loader from "@/components/Loader";
 
 export default function PageTransitionWrapper({ children }) {
-    const [loading, setLoading] = useState(false);
-    const router = useRouter();
+  const pathname = usePathname();
+  const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        const handleStart = () => setLoading(true);
-        const handleComplete = () => setLoading(false);
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 500); // show loader at least half a sec for smoothness
 
-        // These events fire during route changes
-        router.events?.on('routeChangeStart', handleStart);
-        router.events?.on('routeChangeComplete', handleComplete);
-        router.events?.on('routeChangeError', handleComplete);
+    return () => clearTimeout(timeout);
+  }, [pathname]);
 
-        return () => {
-            router.events?.off('routeChangeStart', handleStart);
-            router.events?.off('routeChangeComplete', handleComplete);
-            router.events?.off('routeChangeError', handleComplete);
-        };
-    }, [router]);
-
-    return (
-        <>
-            {loading && <Loader />}
-            {children}
-        </>
-    );
+  return (
+    <>
+      {loading && <Loader />}
+      <div
+        className={
+          loading
+            ? "opacity-50 pointer-events-none"
+            : "opacity-100 transition-opacity"
+        }
+      >
+        {children}
+      </div>
+    </>
+  );
 }

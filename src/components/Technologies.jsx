@@ -187,29 +187,28 @@ export default function Technologies() {
 <div className="hidden sm:block">
   <div className="bg-pink">
     {/* Outer container with full border */}
-    <div className="border border-[#55555580]">
+    <div className="border-t border-[#55555580]">
       
       {/* Category tabs - single row with bottom border only */}
-      <div className="flex border-b border-[#55555580]">
-        {Object.keys(categories).map((category) => (
-          <motion.button
-            key={category}
-            className={`
-              flex-1 p-4 text-center 
-              border-r border-[#55555580] last:border-r-0
-              ${activeCategory === category 
-                ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" 
-                : "hover:bg-gray-50/50"
-              }
-            `}
-            onClick={() => setActiveCategory(category)}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            {category}
-          </motion.button>
-        ))}
-      </div>
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 border-b border-[#55555580]">
+  {Object.keys(categories).map((category) => (
+    <motion.button
+      key={category}
+      className={`
+        p-4 text-center 
+        border-r border-[#55555580] last:border-r-0
+        ${activeCategory === category 
+          ? "bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]" 
+          : "hover:bg-gray-50/50"
+        }
+      `}
+      onClick={() => setActiveCategory(category)}
+    >
+      {category}
+    </motion.button>
+  ))}
+</div>
+
 
       {/* Tech grid - clean internal borders */}
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
@@ -227,7 +226,7 @@ export default function Technologies() {
                 ${showBottomBorder ? 'border-b border-[#55555580]' : ''}
                 hover:bg-white/50 transition-colors
               `}
-              whileHover={{ scale: 1.05 }}
+           
             >
               <a href={tech.link} target="_blank" rel="noopener noreferrer">
                 <Image

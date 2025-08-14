@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import CTASection from "@/components/CTASection";
 
 const categories = [
-//   "All Projects",
+  //   "All Projects",
   "E-commerce",
   "AI Editors",
   "Games",
@@ -87,56 +87,56 @@ export default function PortfolioClient() {
   const [activeCategory, setActiveCategory] = useState("All Projects");
   const [hoveredProject, setHoveredProject] = useState(null);
 
-//   const filteredProjects = activeCategory === "All Projects" 
-//     ? projects 
-//     : projects.filter(project => project.category.includes(activeCategory));
+  //   const filteredProjects = activeCategory === "All Projects" 
+  //     ? projects 
+  //     : projects.filter(project => project.category.includes(activeCategory));
 
   return (
     <div className="">
       <div className="px-5 sm:px-10 lg:px-24 2xl:px-40 pb-20 pt-0">
 
-<div className="border border-[#55555580] pt-10 mb-10 bg-gradient-to-b  from-purple-100/50 to-pink-100/50 backdrop-blur-sm">
-        {/* Hero Section */}
-        <div className="text-center mb-16 ">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-3xl sm:text-5xl font-bold text-gray-900 mb-6"
-          >
-            Our <span className="">Portfolio</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: 0.2 } }}
-            className="text-lg text-gray-600 max-w-3xl mx-auto"
-          >
-            We collaborate with visionary companies to shape and bring to life their innovative business ideas.
-          </motion.p>
-        </div>
-
-        {/* Category Filters */}
-        <motion.div 
-          className="flex flex-wrap justify-center gap-3 mb-16"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 0.3 } }}
-        >
-          {categories.map((category) => (
-            <motion.button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+        <div className="shadow-sm border rounded-lg border-gray-200 pt-10 mb-10 bg-gradient-to-b  from-purple-100/50 to-pink-100/50 backdrop-blur-sm">
+          {/* Hero Section */}
+          <div className="text-center mb-16 ">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-3xl sm:text-5xl font-bold text-gray-900 mb-6"
             >
-              {category}
-            </motion.button>
-          ))}
-        </motion.div>
-</div>
+              Our <span className="">Portfolio</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.2 } }}
+              className="text-lg text-gray-600 max-w-3xl mx-auto"
+            >
+              We collaborate with visionary companies to shape and bring to life their innovative business ideas.
+            </motion.p>
+          </div>
+
+          {/* Category Filters */}
+          <motion.div
+            className="flex flex-wrap justify-center gap-3 mb-16"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 0.3 } }}
+          >
+            {categories.map((category) => (
+              <motion.button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {category}
+              </motion.button>
+            ))}
+          </motion.div>
+        </div>
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <motion.div 
+            <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -150,7 +150,7 @@ export default function PortfolioClient() {
                 <motion.div
                   className="absolute inset-0 bg-gray-100"
                   initial={{ scale: 1 }}
-                  animate={{ 
+                  animate={{
                     scale: hoveredProject === project.id ? 1.05 : 1,
                     transition: { duration: 0.5 }
                   }}
@@ -166,7 +166,7 @@ export default function PortfolioClient() {
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"
                   initial={{ opacity: 0.7 }}
-                  animate={{ 
+                  animate={{
                     opacity: hoveredProject === project.id ? 0.9 : 0.7,
                     transition: { duration: 0.3 }
                   }}
@@ -176,13 +176,13 @@ export default function PortfolioClient() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="flex items-center mb-3">
                     {project.logo && (
-                      <img 
-                        src={project.logo} 
-                        alt={`${project.title} logo`} 
+                      <img
+                        src={project.logo}
+                        alt={`${project.title} logo`}
                         className="w-10 h-10 mr-3 rounded-full object-contain bg-white p-1"
                       />
                     )}
-                    <motion.h3 
+                    <motion.h3
                       className="text-xl font-bold"
                       animate={{
                         y: hoveredProject === project.id ? -5 : 0,
@@ -192,7 +192,7 @@ export default function PortfolioClient() {
                       {project.title}
                     </motion.h3>
                   </div>
-                  
+
                   <motion.div
                     className="overflow-hidden"
                     initial={{ height: 0 }}

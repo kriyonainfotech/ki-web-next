@@ -48,7 +48,7 @@ export default function Home() {
         <div className="px-5 sm:px-10 lg:px-24 2xl:px-40">
           {/* <div className="bg-hero-grid h-auto mt-5">
             <div className="text-center flex flex-col justify-center">
-              <div className=" border border-[#55555580] py-16 sm:py-20 md:py-32 text-center px-2 lg:px-20">
+              <div className=" shadow-sm border rounded-lg border-gray-200 py-16 sm:py-20 md:py-32 text-center px-2 lg:px-20">
                 <h1 className="text-4xl sm:text-5xl xl:text-5xl font-semibold lg:leading-tight xl:leading-tight text-[#222222]">
                   Bringing Visions to Digital Life
                 </h1>
@@ -58,7 +58,7 @@ export default function Home() {
                   innovative solutions that drive real business growth.
                 </p>
               </div>
-              <div className="grid grid-cols-3 h-24 border border-[#55555580]">
+              <div className="grid grid-cols-3 h-24 shadow-sm border rounded-lg border-gray-200">
                 <div className="p-4 border-r border-[#55555580]">
                   <svg
                     stroke="currentColor"
@@ -505,7 +505,7 @@ export default function Home() {
 
           <Technologies />
 
-          <div className="mt-24 sm:mt-36 text-center border border-[#55555580] py-20">
+          <div className="mt-24 sm:mt-36 text-center shadow-sm border rounded-lg border-gray-200 py-20">
             <h1 className="text-4xl sm:text-5xl font-semibold leading-tight text-[#222222]">
               Success Stories
             </h1>
@@ -514,7 +514,7 @@ export default function Home() {
           <div className=" grid grid-cols-12">
             {/* Row 1 - Left (30%) - 3 Vertical Boxes */}
             <div className="col-span-12 lg:col-span-5 flex flex-col ">
-              <div className="p-7 border border-[#55555580]">
+              <div className="p-7 shadow-sm border rounded-lg border-gray-200">
                 <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
                 <p className="text-md mt-5">
                   Kriyona Infotech played a crucial role in bringing my startup
@@ -529,7 +529,7 @@ export default function Home() {
                   <p>Rajiv M. Surati, Founder Of EES121</p>
                 </div>
               </div>
-              <div className="p-7 border border-[#55555580]">
+              <div className="p-7 shadow-sm border rounded-lg border-gray-200">
                 <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
                 <p className="text-md mt-5 ">
                   Exceptional Web Design Service!😊 The team was incredibly
@@ -544,7 +544,7 @@ export default function Home() {
                   <p>Nayan Bhisara, CEO Of Kriyona Studio</p>
                 </div>
               </div>
-              {/* <div className="p-7 border border-[#55555580]">
+              {/* <div className="p-7 shadow-sm border rounded-lg border-gray-200">
                 <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
                 <p className="text-sm mt-5">Excellent work!</p>
                 <div className="flex items-center mt-10">
@@ -554,7 +554,7 @@ export default function Home() {
             </div>
 
             {/* Row 1 - Right (60%) - One Large Box */}
-            <div className="col-span-12 lg:col-span-7 p-7 border border-[#55555580] flex flex-col justify-center">
+            <div className="col-span-12 lg:col-span-7 p-7 shadow-sm border rounded-lg border-gray-200 flex flex-col justify-center">
               <div className="flex flex-col justify-between">
                 <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
                 <p className="text-sm md:text-lg lg:text-2xl leading-[35px] w-5/6 mx-auto">
@@ -574,21 +574,21 @@ export default function Home() {
             </div>
 
             {/* Row 2 - Three Equal Boxes */}
-            {/* <div className="col-span-12 md:col-span-4 p-7 border border-[#55555580]">
+            {/* <div className="col-span-12 md:col-span-4 p-7 shadow-sm border rounded-lg border-gray-200">
               <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
               <p className="text-sm mt-5">Clean and professional website!</p>
               <div className="flex items-center mt-10">
                 <p>Nilesh Sosa</p>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-4 p-7 border border-[#55555580]">
+            <div className="col-span-12 md:col-span-4 p-7 shadow-sm border rounded-lg border-gray-200">
               <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
               <p className="text-sm mt-5">Superb service!</p>
               <div className="flex items-center mt-10">
                 <p>Rajiv M. Surati</p>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-4 p-7 border border-[#55555580]">
+            <div className="col-span-12 md:col-span-4 p-7 shadow-sm border rounded-lg border-gray-200">
               <img alt="quote" className="w-5 h-5" src="/quote-left.png" />
               <p className="text-sm mt-5">
                 Great experience working with them!
@@ -599,7 +599,7 @@ export default function Home() {
             </div> */}
 
             {/* Row 3 - Full Width Box */}
-            <div className="col-span-12 flex items-center  justify-center py-32 border border-[#55555580] bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]">
+            <div className="col-span-12 flex items-center  justify-center py-32 shadow-sm border rounded-lg border-gray-200 bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]">
               <p className="text-lg md:text-4xl text-center">
                 Now that's what I call amazing!
               </p>

@@ -31,9 +31,9 @@ export default function Footer() {
 
     return (
         <footer className="bg-pink">
-            <div className="px-5 mt-32 mb-14 xxs:mx-5 sm:mx-5 lg:mx-24 2xl:mx-40">
+            <div className="mt-32 mb-14 xxs:mx-5 sm:mx-5 lg:mx-24 2xl:mx-40">
                 {/* CTA Section */}
-                <div className="text-center border border-[#55555580] py-20 px-5">
+                <div className="text-center shadow-sm border rounded-lg border-gray-200 py-20 px-5">
                     <h1 className="text-gray-900 font-bold text-2xl md:text-4xl lg:text-5xl">
                         Build With Kriyona Infotech
                     </h1>
@@ -42,7 +42,7 @@ export default function Footer() {
 
                         sizes to deliver ambitious digital projects.
                     </p>
-                    <div className="bg-white mt-14 border border-[#55555550] w-fit mx-auto py-4 px-7 rounded-full underline">
+                    <div className="bg-white mt-14 border border-[#55555550] w-fit mx-auto py-4 px-7 rounded-md underline">
                         <a
                             href="mailto:kriyonainfotech@gmail.com"
                             className="text-primary-black"
@@ -53,9 +53,9 @@ export default function Footer() {
                 </div>
 
                 {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-20 border border-[#55555580] px-5">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-20 shadow-sm border rounded-lg border-gray-200 px-5">
                     {/* Company Info */}
-                    <div className="text-left md:border-r border-[#55555580] py-5">
+                    <div className="text-left py-5">
                         <h3 className="text-xl font-bold mb-4">Kriyona Infotech</h3>
                         <p>
                             Bringing Visions to <br /> Digital Life.
@@ -74,7 +74,7 @@ export default function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="text-left md:border-r border-[#55555580] py-5">
+                    <div className="text-left py-5">
                         <h3 className="text-xl font-bold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
@@ -142,7 +142,7 @@ export default function Footer() {
                     </div>
 
                     {/* Services */}
-                    <div className="text-left md:border-r border-[#55555580] py-5">
+                    <div className="text-left py-5">
                         <h3 className="text-xl font-bold mb-4">Services</h3>
                         <ul className="space-y-2">
                             <li>

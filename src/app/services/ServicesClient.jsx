@@ -35,7 +35,7 @@ export default function ServicesClient() {
                         {services.map((service, index) => (
                             <div
                                 key={index}
-                                className="service-card border border-[#55555580] p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group relative overflow-hidden flex flex-col h-full"
+                                className="service-card shadow-sm border rounded-lg border-gray-200 p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group relative overflow-hidden flex flex-col h-full"
                             >
                                 <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-500 backdrop-blur-sm border border-white/20 "></div>
 
@@ -90,43 +90,43 @@ export default function ServicesClient() {
                 </section>
 
                 {/* CTA Section */}
-                 <section className="w-full flex justify-center  pt-20 pb-5">
-            <div className="w-full max-w-full mx-40 bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% backdrop-blur-sm  py-16 px-8 relative overflow-hidden shadow-lg">
-                <div className="container mx-auto px-6 text-center">
-                    <motion.h2
-                        className="text-3xl sm:text-4xl font-bold mb-7"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                    >
-                            Ready to Revolutionize Your Tech Stack?
-                    </motion.h2>
+                <section className="w-full flex justify-center  pt-20 pb-5">
+                    <div className="w-full max-w-full bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% backdrop-blur-sm  py-16 px-8 relative overflow-hidden shadow-lg">
+                        <div className="container mx-auto px-6 text-center">
+                            <motion.h2
+                                className="text-3xl sm:text-4xl font-bold mb-7"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                viewport={{ once: true }}
+                            >
+                                Ready to Revolutionize Your Tech Stack?
+                            </motion.h2>
 
-                    <motion.p
-                        className="text-gray-600 max-w-2xl mx-auto mb-10 px-4"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        viewport={{ once: true }}
-                    >
-                        Let's build something extraordinary together. Schedule a free tech
-                            consultation today.
-                    </motion.p>
+                            <motion.p
+                                className="text-gray-600 max-w-2xl mx-auto mb-10 px-4"
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ delay: 0.2 }}
+                                viewport={{ once: true }}
+                            >
+                                Let's build something extraordinary together. Schedule a free tech
+                                consultation today.
+                            </motion.p>
 
-                    <motion.a
-                        href="tel:+918401366742"
-                        className="inline-flex items-center gap-2 bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-xl transition"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.4 }}
-                        viewport={{ once: true }}
-                    >
-                            Start Your Project Now
-                    </motion.a>
-                </div>
-            </div>
-        </section>
+                            <motion.a
+                                href="tel:+918401366742"
+                                className="inline-flex items-center gap-2 bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-xl transition"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.4 }}
+                                viewport={{ once: true }}
+                            >
+                                Start Your Project Now
+                            </motion.a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </>
     )

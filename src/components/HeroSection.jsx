@@ -19,7 +19,7 @@ const HeroSection = () => {
     >
       {/* Animated Background Elements */}
       <motion.div
-        className="absolute inset-0 bg-[radial-gradient(circle_at_center,#f0f0f0_1px,transparent_1px)] bg-[length:40px_40px]"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_center,#f0f0f0_1.2px,transparent_1px)] bg-[length:40px_40px]"
         animate={{
           backgroundPosition: ["0% 0%", "100% 100%"],
           transition: {
@@ -75,14 +75,14 @@ const HeroSection = () => {
             Bringing{" "}
             <motion.span
               className="text-indigo-600 inline-block"
-              // animate={{
-              //   rotate: [0, 5, -5, 0],
-              //   transition: {
-              //     duration: 8,
-              //     repeat: Infinity,
-              //     repeatType: "mirror",
-              //   },
-              // }}
+            // animate={{
+            //   rotate: [0, 5, -5, 0],
+            //   transition: {
+            //     duration: 8,
+            //     repeat: Infinity,
+            //     repeatType: "mirror",
+            //   },
+            // }}
             >
               Visions
             </motion.span>{" "}

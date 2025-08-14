@@ -44,15 +44,15 @@ export default function ContactUsClient() {
     return (
         <div className="xxs:px-5 sm:px-5 lg:px-24 2xl:px-40">
 
-            <div className="bg-hero-grid py-20 px-4 border border-[#55555580]">
-                <h1 className="text-2xl sm:text-4xl xl:text-4xl xs:w-auto font-semibold text-primary-black sm:w-4/5 mx-auto">
+            <div className="bg-hero-grid py-20 shadow-sm border rounded-lg border-gray-200 px-20">
+                <h1 className="text-2xl sm:text-4xl xl:text-4xl font-semibold text-primary-black ">
                     Contact Us
                 </h1>
-                <p className="text-md lg:text-lg pt-10 text-gray-600 w-auto xl:w-5/6 mx-auto">
+                <p className="text-md lg:text-lg text-gray-600 pt-3">
                     Have questions or want to get in touch? We’re here to help!
                 </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-20 px-10 border border-[#55555580] mt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-20 px-10 shadow-sm border rounded-lg border-gray-200 mt-10">
                 <div>
                     <h2 className="text-2xl font-semibold text-[#222222]">
                         Reach Out to Us
@@ -131,7 +131,7 @@ export default function ContactUsClient() {
                                     <input
                                         type="text"
                                         name="name"
-                                        className="w-full mt-2 p-3 border border-[#55555580] rounded"
+                                        className="w-full mt-2 p-3 shadow-sm border rounded-lg border-gray-200 rounded"
                                         placeholder="Your Name"
                                         required
                                     />
@@ -144,7 +144,7 @@ export default function ContactUsClient() {
                                     <input
                                         type="email"
                                         name="email"
-                                        className="w-full mt-2 p-3 border border-[#55555580] rounded"
+                                        className="w-full mt-2 p-3 shadow-sm border rounded-lg border-gray-200 rounded"
                                         placeholder="Your Email"
                                         required
                                     />
@@ -157,7 +157,7 @@ export default function ContactUsClient() {
                                     <textarea
                                         name="message"
                                         rows="5"
-                                        className="w-full mt-2 p-3 border border-[#55555580] rounded"
+                                        className="w-full mt-2 p-3 shadow-sm border rounded-lg border-gray-200 rounded"
                                         placeholder="Your Message"
                                         required
                                     ></textarea>
@@ -172,7 +172,7 @@ export default function ContactUsClient() {
                                 <button
                                     type="submit"
                                     disabled={status === "loading"}
-                                    className="w-full py-3 text-gray-900 border border-[#55555580] rounded bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]"
+                                    className="w-full py-3 text-gray-900 shadow-sm border rounded-lg border-gray-200 rounded bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF]"
                                 >
                                     {status === "loading" ? "Sending..." : "Submit"}
                                 </button>
@@ -187,7 +187,7 @@ export default function ContactUsClient() {
                     </div>
                 </div>
             </div>
-            <div className="py-20 border border-[#55555580] mt-10 px-4">
+            <div className="py-20 shadow-sm border rounded-lg border-gray-200 mt-10 px-4">
                 <h2 className="text-center text-2xl font-semibold text-[#222222]">
                     Business Hours
                 </h2>
@@ -195,7 +195,7 @@ export default function ContactUsClient() {
                     Monday - Saturday: 9:00 AM - 7:00 PM
                 </p>
             </div>
-            <div className="py-20 border border-[#55555580] mt-10 px-8">
+            <div className="py-20 shadow-sm border rounded-lg border-gray-200 mt-10 px-8">
                 <h2 className="text-center text-2xl font-semibold text-[#222222]">
                     Frequently Asked Questions
                 </h2>
@@ -233,7 +233,7 @@ export default function ContactUsClient() {
                     </div>
                 </div>
             </div>
-            <div className="py-16 bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF] border border-[#55555580] mt-10 text-center">
+            <div className="py-16 bg-gradient-to-r from-[#FFF4E8] to-[#FFE4FF] shadow-sm border rounded-lg border-gray-200 mt-10 text-center">
                 <h2 className="text-2xl font-semibold text-[#222222]">
                     Ready to Start Your Project?
                 </h2>

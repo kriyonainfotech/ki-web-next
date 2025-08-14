@@ -77,7 +77,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
         <div className="px-5 sm:px-5 lg:px-24 2xl:px-40 py-10">
             <div className="flex flex-col md:flex-row gap-10">
                 {/* Left: Blog Content */}
-                <div className="md:w-[70%] border border-[#55555580] p-8">
+                <div className="md:w-[70%] shadow-sm border rounded-lg border-gray-200 p-8">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">
                         {blog.title}
                     </h1>
@@ -88,7 +88,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                     <img
                         src={blog.imageUrl}
                         alt={blog.title}
-                        className="w-full max-h-[400px] object-cover -lg shadow-md mb-8"
+                        className="w-full max-h-[400px] object-cover shadow-md mb-8"
                     />
 
                     <div
@@ -101,7 +101,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                 <div className="md:w-[30%] relative">
                     <div className="md:sticky top-20 space-y-10">
                         {/* Contact Form */}
-                        <div className=" border-[#55555580] border p-5 -lg shadow-md ">
+                        <div className=" shadow-sm border rounded-lg border-gray-200 p-5">
                             <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
 
                             <div>
@@ -123,7 +123,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                                             <input
                                                 type="text"
                                                 name="name"
-                                                className="w-full mt-2 p-3 border border-[#55555580] rounded"
+                                                className="w-full mt-2 p-3 shadow-sm border  border-gray-200 rounded"
                                                 placeholder="Your Name"
                                                 required
                                             />
@@ -136,7 +136,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                                             <input
                                                 type="email"
                                                 name="email"
-                                                className="w-full mt-2 p-3 border border-[#55555580] rounded"
+                                                className="w-full mt-2 p-3 shadow-sm border border-gray-200 rounded"
                                                 placeholder="Your Email"
                                                 required
                                             />
@@ -149,7 +149,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                                             <textarea
                                                 name="message"
                                                 rows="5"
-                                                className="w-full mt-2 p-3 border border-[#55555580] rounded"
+                                                className="w-full mt-2 p-3 shadow-sm border rounded-lg border-gray-200 rounded"
                                                 placeholder="Your Message"
                                                 required
                                             ></textarea>
@@ -180,7 +180,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                         </div>
 
                         {/* Subscribe */}
-                        <div className="border border-[#55555570] p-4 -lg">
+                        <div className="shadow-sm border rounded-lg border-gray-200 p-4 -lg">
                             <h2 className="text-xl font-semibold mb-3">
                                 Subscribe for Updates
                             </h2>
@@ -193,7 +193,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder="Your Email"
-                                    className="w-full p-2 border border-[#55555570] mb-3 outline-none focus:ring-1 focus:ring-gray-200 rounded"
+                                    className="w-full p-2 shadow-sm border border-gray-200 mb-3 outline-none focus:ring-1 focus:ring-gray-200 rounded"
                                 />
                                 <button
                                     className="w-full py-2 px-5 border border-[#55555570] rounded
@@ -208,7 +208,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                         </div>
 
                         {/* Follow Us */}
-                        <div className="border border-[#55555580] p-5 -lg shadow-md">
+                        <div className="shadow-sm border rounded-lg border-gray-200 p-5">
                             <h2 className="text-xl font-semibold mb-3">Follow Us</h2>
 
                             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 w-fit">
@@ -263,7 +263,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
 
             <div className="pt-40">
                 {/* CTA */}
-                <div className="mt-10 p-6 border text-center border-[#55555580]">
+                <div className="mt-10 p-6 text-center shadow-sm border rounded-lg border-gray-200">
                     <h2 className="text-xl font-semibold mb-2">Like what you read?</h2>
                     <p className="mb-4">
                         Subscribe to get more content like this directly to your inbox.
@@ -275,11 +275,11 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Enter your email"
                             required
-                            className="border px-4 py-2 mx-w-7xl mr-2 outline-none"
+                            className="shadow-sm border rounded border-gray-200 px-4 py-2 mx-w-7xl mr-2 outline-none"
                         />
                         <button
                             type="submit"
-                            className="mt-2 border-[#55555580] border bg-gradient-to-r from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% px-4 py-2 "
+                            className="mt-2 border-[#55555580] border bg-gradient-to-r rounded from-[#FFF4E8] from-51% to-[#FFE4FF] to-100% px-4 py-2 "
                         >
                             Subscribe
                         </button>
@@ -298,7 +298,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                         {relatedBlogs.map((blog) => (
                             <div
                                 key={blog._id}
-                                className="border border-[#55555580] p-4 hover:shadow-lg transition duration-200 bg-white"
+                                className="shadow-sm border rounded-lg border-gray-200 p-4 hover:shadow-lg transition duration-200 bg-white"
                             >
                                 <h3 className="text-lg font-semibold mb-2">{blog.title}</h3>
                                 <img

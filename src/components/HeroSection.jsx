@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const HeroSection = () => {
   const containerRef = useRef(null);
@@ -11,6 +11,23 @@ const HeroSection = () => {
     },
     { label: "Portfolio", link: "/portfolio" },
   ];
+
+  const [floatingElements, setFloatingElements] = useState([]);
+
+  useEffect(() => {
+    setFloatingElements(
+      [...Array(8)].map(() => ({
+        width: Math.random() * 300 + 100,
+        height: Math.random() * 300 + 100,
+        left: Math.random() * 100,
+        top: Math.random() * 100,
+        animX: Math.random() * 200 - 100,
+        animY: Math.random() * 200 - 100,
+        animRotate: Math.random() * 360,
+        animDuration: Math.random() * 20 + 15,
+      }))
+    );
+  }, []);
 
   return (
     <div
@@ -32,23 +49,23 @@ const HeroSection = () => {
       />
 
       {/* Floating Animated Elements */}
-      {[...Array(8)].map((_, i) => (
+      {floatingElements.map((el, i) => (
         <motion.div
           key={i}
           className="absolute rounded-full bg-gray-100/50 backdrop-blur-sm"
           style={{
-            width: `${Math.random() * 300 + 100}px`,
-            height: `${Math.random() * 300 + 100}px`,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            width: `${el.width}px`,
+            height: `${el.height}px`,
+            left: `${el.left}%`,
+            top: `${el.top}%`,
           }}
           animate={{
-            x: [0, Math.random() * 200 - 100],
-            y: [0, Math.random() * 200 - 100],
-            rotate: [0, Math.random() * 360],
+            x: [0, el.animX],
+            y: [0, el.animY],
+            rotate: [0, el.animRotate],
             scale: [1, 1.2, 1],
             transition: {
-              duration: Math.random() * 20 + 15,
+              duration: el.animDuration,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "easeInOut",
